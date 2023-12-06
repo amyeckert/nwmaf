@@ -52,7 +52,10 @@ wp-config-local.php
 /mu-plugins/
 
 # Ignore all themes
-/themes/twenty*
+/themes/twentytwentytwo
+/themes/twentytwentythree
+/themes/twentytwentyone
+/themes/twentytwenty
 
 # node modules
 ##############
