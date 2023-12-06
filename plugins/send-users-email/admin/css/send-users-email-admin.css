@@ -1,0 +1,44 @@
+.sue-row .card {
+    max-width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #0dcaf0;
+    border: 1px solid #00f;
+    padding: 3px 5px;
+    font-size: 13px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+}
+
+.select2-results__option[aria-selected=true] {
+    display: none;
+}
+
+button .dashicons {
+    margin-top: 3px;
+}
+
+.sue-user-email-datatable-wrapper {
+    visibility: hidden;
+}
+
+label {
+    font-weight: bold;
+}
+
+.sue-spinner {
+    display: none;
+}
+
+.sue-dashboard .badge {
+    font-size: 1.1em;
+}
+
+/* </fs_premium_only> */
+.delete-queue-email {
+    cursor: pointer;
+}
+/* </fs_premium_only> */

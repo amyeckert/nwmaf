@@ -1,0 +1,107 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+
+# Core
+#
+# Note: if you want to stage/commit WP core files
+# you can delete this whole section/until Configuration.
+
+/wp-admin/
+/index.php
+/languages
+/plugins/index.php
+/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+wp-cli.local.yml
+# WordPress #
+############
+/blogs.dir/
+/upgrade/
+/backup-db/
+/updraft/
+/backupwordpress-*/
+/managewp/backups/
+/advanced-cache.php
+/wp-cache-config.php
+sitemap.xml
+sitemap.xml.gz
+
+# Configuration
+wp-config.php
+wp-config-local.php
+
+# Uploads
+/uploads/
+
+# Log files
+*.log
+
+# htaccess
+/.htaccess
+
+# All plugins
+#
+# Note: If you wish to whitelist plugins,
+# uncomment the next line
+#/wp-content/plugins
+/mu-plugins/
+
+# Ignore all themes
+/themes/*
+# Except this one theme
+!/themes/nwmaf
+
+# node modules
+##############
+themes/nwmaf/node_modules
+
+# @TODO writable paths
+/cache/
+/backups/
+
+# Avoid accidental modification of pantheon.upstream.yml in sites
+# created from this upstream
+pantheon.upstream.yml
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wp-includes/**/*.gz
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+#lando local
+#############
+.lando.local.yml

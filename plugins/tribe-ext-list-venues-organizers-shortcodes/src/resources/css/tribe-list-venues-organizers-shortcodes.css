@@ -1,0 +1,41 @@
+/**
+ * The Events Calendar Venues and Organizers Shortcodes
+ */
+
+ul.tribe-venues-organizers-shortcode {
+	list-style-type: none;
+	padding: 5px;
+}
+
+ul.tribe-venues-organizers-shortcode::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.tribe-venues-organizers-shortcode li {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+}
+
+.tribe-venues-organizers-image {
+	margin-right: 10px;
+	max-height: 40px;
+	max-width: 40px;
+	float: left;
+}
+
+.tribe-venues-organizers-info a {
+	margin-top: 5px;
+}
+
+.tribe-venues-organizers-event-count {
+	margin-bottom: 5px;
+	font-style: italic;
+	display: block;
+}
+
+.tribe-venues-organizers-details {
+	font-size: 0.8em;
+}

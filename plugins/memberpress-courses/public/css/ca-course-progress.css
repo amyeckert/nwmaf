@@ -1,0 +1,72 @@
+body.mpca_progress_on{overflow: hidden;}
+.course-progress-modal  {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.course-progress-modal.on {
+  visibility: visible;
+}
+.course-progress-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 47px 42px 20px;
+  width: 695px;
+  height: 539px;
+    max-width: 90%;
+  max-height: 75%;
+  overflow-y: auto;
+    border-radius: 15px;
+}
+
+.course-progress-close-button { cursor: pointer; position: absolute; top: 10px; right: 20px; width: 12px; }
+.course-progress-close-button > img { max-width: 100%; height: auto; }
+
+.mpca-course-progress-heading { font-size: 18px; font-weight: bold; line-height: 130%; }
+
+.mpcs-course-information  { padding-top: 30px; }
+
+.mpcs-course-information-no-record  { text-align: center; font-size: 14px; font-weight: 400; }
+
+.course-progress-summary-row  { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; align-items: center; padding: 0 0 13px; margin: 0 0 13px; border-bottom: 1px solid rgba(110, 118, 129, 0.25); }
+.course-progress-summary-row  .course-progress-summary-title  { -ms-flex: 0 0 33.333333%; flex: 0 0 33.333333%; max-width: 33.333333%; font-size: 14px; font-weight: 400; line-height: 130%; color: #6e7681; }
+.course-progress-summary-row  .course-progress-summary-title  > a { color: #6e7681; -webkit-transition: all 0.25s linear 0s; transition: all 0.25s linear 0s; text-decoration: none; font-weight: bold; }
+.course-progress-summary-row  .course-progress-summary-title  > a:hover { color: #006be5; text-decoration: none; }
+.course-progress-summary-row  .course-progress-summary  { -ms-flex: 0 0 66.666667%; flex: 0 0 66.666667%; max-width: 66.666667%; }
+.course-progress-summary-row  .course-progress  { overflow: hidden; background-color: #e0e0e0; box-shadow: 0px 4px 8px rgba(33, 33, 33, 0.11); border-radius: 100px; }
+.course-progress-summary-row  .ca-user-progress  { background-color: #006be5; box-shadow: 0px 8px 16px rgba(33, 33, 33, 0.2); text-align: center; -webkit-transition: all 0.25s linear 0s; transition: all 0.25s linear 0s; line-height: 1 }
+.course-progress-summary-row  .ca-user-progress  > span  { height: 27px; font-size: 14px; font-weight: 700; line-height: 27px; padding: 0 8px; color: #fff; }
+
+.quiz-progress-summary-row  { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; align-items: center; padding: 0 0 6px; }
+.quiz-progress-summary-row  .quiz-progress-summary-title  { -ms-flex: 0 0 33.333333%; flex: 0 0 33.333333%; max-width: 33.333333%; font-size: 14px; font-weight: 400; line-height: 130%; color: #6e7681; }
+.quiz-progress-summary-row  .quiz-progress-summary-title  > a { color: #6e7681; -webkit-transition: all 0.25s linear 0s; transition: all 0.25s linear 0s; text-decoration: none; }
+.quiz-progress-summary-row  .quiz-progress-summary-title  > a:hover { color: #006be5; text-decoration: none; }
+.quiz-progress-summary-row  .quiz-progress-summary  { -ms-flex: 0 0 66.666667%; flex: 0 0 66.666667%; max-width: 66.666667%; color: #006be5; font-size: 14px; font-weight: 400; line-height: 130%; }
+
+@media (max-width: 767px) and (orientation: portrait) {
+.course-progress-modal-content { }
+
+.course-progress-summary-row  .course-progress-summary-title,
+.course-progress-summary-row  .course-progress-summary  { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+.course-progress-summary-row  .course-progress-summary  { margin-top: 10px; }
+
+.quiz-progress-summary-row  .quiz-progress-summary-title,
+.quiz-progress-summary-row  .quiz-progress-summary  { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+}
+
+@media (max-width: 767px) {
+.course-progress-modal-content { padding: 32px 27px 15px; }
+}
+@media (max-width: 991px) {
+.course-progress-modal-content { max-width: 85%; }
+}

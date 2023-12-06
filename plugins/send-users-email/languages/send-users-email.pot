@@ -1,0 +1,876 @@
+# Copyright (C) 2023 Suman Bhattarai
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Send Users Email 1.4.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/send-users-email\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-11-14T08:17:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: send-users-email\n"
+
+#. Plugin Name of the plugin
+#: admin/class-send-users-email-admin.php:87
+msgid "Send Users Email"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://sendusersemail.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Easily send emails to your users. Select individual users or role to send email."
+msgstr ""
+
+#. Author of the plugin
+msgid "Suman Bhattarai"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://sumanbhattarai.com.np"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:88
+msgid "Email to users"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:97
+#: admin/class-send-users-email-admin.php:98
+#: admin/partials/admin-dashboard.php:14
+msgid "Dashboard"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:106
+#: admin/class-send-users-email-admin.php:107
+msgid "Email Users"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:115
+#: admin/class-send-users-email-admin.php:116
+msgid "Email Roles"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:124
+#: admin/class-send-users-email-admin.php:125
+#: admin/partials/admin-pro-features.php:97
+#: admin/partials/settings.php:7
+msgid "Settings"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:137
+#: admin/class-send-users-email-admin.php:138
+msgid "Email Templates"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:146
+#: admin/class-send-users-email-admin.php:147
+msgid "Email Queue"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:156
+#: admin/class-send-users-email-admin.php:157
+msgid "PRO Features"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:166
+#: admin/class-send-users-email-admin.php:167
+msgid "Email & Error Log"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:307
+#: admin/class-send-users-email-admin.php:502
+msgid "🚀🚀🚀 Email(s) sent successfully!"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:322
+#: admin/class-send-users-email-admin.php:517
+#: admin/class-send-users-email-admin.php:1176
+msgid "Subject is required and should be between 2 and 200 characters."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:327
+#: admin/class-send-users-email-admin.php:522
+#: admin/class-send-users-email-admin.php:1181
+msgid "Please provide email content."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:331
+msgid "Please select users."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:410
+#: admin/class-send-users-email-admin.php:607
+msgid "🚀🚀🚀 Email(s) added to Queue!"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:526
+msgid "Please select role(s)."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:790
+msgid "Please provide valid image URL.."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:794
+msgid "Please provide a bit more title."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:798
+msgid "Please provide a bit more tagline."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:802
+msgid "Please provide a bit more footer content."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:807
+msgid "Please provide a bit more email from Name."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:812
+msgid "Please provide a valid email from address."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:817
+msgid "Please provide a valid reply to address."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:822
+#: admin/class-send-users-email-admin.php:842
+msgid "Please provide a valid positive number."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:827
+msgid "Please provide a valid number. Can be zero or greater."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:832
+#: admin/class-send-users-email-admin.php:837
+msgid "Please provide a valid email from name."
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:1201
+msgid "Email template updated successfully!"
+msgstr ""
+
+#: admin/class-send-users-email-admin.php:1209
+msgid "Email template created successfully!"
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:19
+msgid "Total Users"
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:105
+msgid "About"
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:107
+msgid "Send email to users by selecting individual users or bulk send emails using roles."
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:116
+msgid "Please don't SPAM"
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:118
+msgid "You don't like spam, I don't like spam, nobody likes spam."
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:120
+msgid "Please be responsible and don't spam your users."
+msgstr ""
+
+#: admin/partials/admin-dashboard.php:123
+msgid "With great power comes great responsibility."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:5
+msgid "Feature of PRO version"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:13
+msgid "Queue System"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:14
+msgid "Having trouble with your email service provider due to reaching your daily or monthly limits?"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:16
+msgid "Queue system of this plugin will send specified amount of email regularly so that you do not hit that limit."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:18
+msgid "For example: If your hosting/email provider only allows 300 outgoing emails per day, but you are about to send 900 emails, you can configure plugin is such a way to send only 300 email per day staying below the said limit."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:20
+msgid "These emails will be sent periodically using WordPress cron automatically. You will just have to send 900 emails once and plugin will take care of sending these emails periodically."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:31
+msgid "Email Template"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:32
+msgid "Are you sending same emails content over and over again?"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:34
+msgid "Are you tired of typing same email repeatedly?"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:36
+msgid "Pro version of Send Users Email allows you to save email template and reuse it while sending emails to your user."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:47
+msgid "Email Styles"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:48
+msgid "Having trouble crafting descent looking email style?"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:50
+msgid "Send Users Email provides you with an option to use prebuild email style."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:52
+msgid "Pro version of Send Users Email provides email style that is compatible with various screen sizes and you can choose different color scheme as per your need."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:63
+msgid "Other features"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:64
+msgid "Pro version of Send Users Email provides some more minor feature upgrade to make your life a bit more easier."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:67
+msgid "Use placeholder on email subjects for more personal touch to email you send."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:69
+msgid "Ability to send queued email at later date. Schedule email to be send in the future."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:71
+msgid "A clutter-free plugin area so that you can focus on things that matter to you."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:85
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:99
+msgid "Outgoing email rate"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:101
+msgid "This option determines number of emails sent every five minutes. By default only one email is sent every five minutes."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:104
+msgid "Queued email are sent using WordPress cron. WordPress cron is not true cron and depends on visitors of your site. If your site has low visitor volume, cron might not run every five minutes. Read more about WP Cron "
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:109
+#: admin/partials/settings.php:246
+msgid "Delete sent emails"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:111
+msgid "Its better if you periodically delete emails send via queue. By default sent emails are not deleted. You should set days here after which sent email are deleted automatically."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:122
+msgid "Template and Queue"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:124
+msgid "You can create email template so that you don't have to write same email over a ndover again"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:126
+msgid "You can create template from"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:129
+msgid "You can queue emails by selecting the Add to Queue."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:140
+msgid "Purple theme email style"
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:142
+msgid "You can choose to use prebuild email styles with various color scheme."
+msgstr ""
+
+#: admin/partials/admin-pro-features.php:144
+msgid "Available color scheme includes Blue, Green, Pink, Purple, Red and Yellow."
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:13
+msgid "Add Template"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:21
+#: admin/partials/roles-email.php:22
+#: admin/partials/users-email.php:29
+msgid "Email Subject"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:23
+#: admin/partials/users-email.php:31
+msgid "Email subject here."
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:24
+#: admin/partials/roles-email.php:25
+#: admin/partials/users-email.php:32
+msgid "You can use placeholder on subject."
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:30
+#: admin/partials/roles-email.php:99
+#: admin/partials/users-email.php:87
+msgid "Email Message"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:42
+msgid "Is Active?"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:44
+msgid "Only active template will show up in template selection."
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:50
+msgid "Select template to be used for"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:53
+msgid "Both for User and Role email"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:55
+msgid "Only User Email"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:56
+msgid "Only Role Email"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:67
+msgid "Save"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:74
+#: admin/partials/roles-email.php:132
+#: admin/partials/settings.php:354
+#: admin/partials/users-email.php:120
+msgid "Loading..."
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:97
+msgid "Templates"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:101
+#: admin/partials/email-queue.php:86
+#: admin/partials/email-queue.php:99
+#: admin/partials/email-queue.php:128
+#: admin/partials/email-queue.php:142
+#: admin/partials/users-email.php:63
+msgid "ID"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:102
+#: admin/partials/email-queue.php:87
+#: admin/partials/email-queue.php:100
+#: admin/partials/email-queue.php:129
+#: admin/partials/email-queue.php:143
+msgid "Subject"
+msgstr ""
+
+#: admin/partials/email-premade-templates.php:103
+msgid "Action"
+msgstr ""
+
+#: admin/partials/email-queue.php:17
+msgid "Email send via queue in last 30 days"
+msgstr ""
+
+#: admin/partials/email-queue.php:19
+msgid "Data coming from queued email records. If you want stats for 30 days please set delete interval in settings page to more than 30 days."
+msgstr ""
+
+#: admin/partials/email-queue.php:66
+msgid "Queued Email"
+msgstr ""
+
+#: admin/partials/email-queue.php:77
+msgid "Delete all queued emails"
+msgstr ""
+
+#: admin/partials/email-queue.php:88
+#: admin/partials/email-queue.php:101
+#: admin/partials/email-queue.php:130
+#: admin/partials/email-queue.php:144
+#: admin/partials/users-email.php:65
+msgid "Email"
+msgstr ""
+
+#: admin/partials/email-queue.php:89
+#: admin/partials/email-queue.php:102
+#: admin/partials/email-queue.php:131
+#: admin/partials/email-queue.php:145
+msgid "Via"
+msgstr ""
+
+#: admin/partials/email-queue.php:90
+#: admin/partials/email-queue.php:103
+#: admin/partials/email-queue.php:132
+#: admin/partials/email-queue.php:146
+msgid "Role"
+msgstr ""
+
+#: admin/partials/email-queue.php:91
+#: admin/partials/email-queue.php:104
+#: admin/partials/email-queue.php:134
+#: admin/partials/email-queue.php:148
+msgid "Added"
+msgstr ""
+
+#: admin/partials/email-queue.php:113
+msgid "Nothing in Queue right now!"
+msgstr ""
+
+#: admin/partials/email-queue.php:123
+msgid "Sent Email"
+msgstr ""
+
+#: admin/partials/email-queue.php:133
+#: admin/partials/email-queue.php:147
+msgid "Email Send at"
+msgstr ""
+
+#: admin/partials/email-template-with-style-pro.php:406
+msgid "You are receiving this message because you are member of"
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:17
+msgid "Logs"
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:20
+msgid "There are no logs to display right now."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:22
+msgid "You will find error log and email log here once available."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:33
+msgid "Email Log"
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:68
+msgid "Error Log"
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:86
+msgid "Please note that the error logged here is only when wp_mail function fails."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:88
+msgid "It is possible that wp_mail is able to send email successfully but your email service provider dropped sent email at their end."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:90
+msgid "In this case there is nothing this plugin can do and you need to contact your email service provider for more details on why your emails are not being sent."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:100
+msgid "Error log file is getting large. Please consider clearing it soon."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:105
+msgid "IMPORTANT! Error log file is getting large. Please clear log file if you are experiencing slow page load."
+msgstr ""
+
+#: admin/partials/email_and_error_log.php:116
+msgid "Error log file size is "
+msgstr ""
+
+#: admin/partials/roles-email.php:7
+msgid "Send email to selected roles"
+msgstr ""
+
+#: admin/partials/roles-email.php:24
+msgid "Email subject here"
+msgstr ""
+
+#: admin/partials/roles-email.php:31
+msgid "Select Role(s)"
+msgstr ""
+
+#: admin/partials/roles-email.php:125
+#: admin/partials/users-email.php:113
+msgid "Send Message"
+msgstr ""
+
+#: admin/partials/roles-email.php:164
+#: admin/partials/settings.php:381
+#: admin/partials/users-email.php:170
+msgid "Instruction"
+msgstr ""
+
+#: admin/partials/roles-email.php:166
+msgid "Send email to all users belonging to selected roles."
+msgstr ""
+
+#: admin/partials/settings.php:17
+msgid "Logo URL"
+msgstr ""
+
+#: admin/partials/settings.php:20
+msgid "Add email header logo URL here. If left blank, logo will not be used."
+msgstr ""
+
+#: admin/partials/settings.php:26
+msgid "Add your logo URL"
+msgstr ""
+
+#: admin/partials/settings.php:34
+msgid "Email Title"
+msgstr ""
+
+#: admin/partials/settings.php:37
+msgid "This value will be shown below logo image."
+msgstr ""
+
+#: admin/partials/settings.php:50
+msgid "Email Tagline"
+msgstr ""
+
+#: admin/partials/settings.php:53
+msgid "This value will be shown below email title image."
+msgstr ""
+
+#: admin/partials/settings.php:66
+msgid "Email Footer"
+msgstr ""
+
+#: admin/partials/settings.php:69
+msgid "Email footer content will be added to all emails at footer of email (supports HTML). Please use full https links for maximum compatibility among email clients."
+msgstr ""
+
+#: admin/partials/settings.php:75
+msgid "Email footer content"
+msgstr ""
+
+#: admin/partials/settings.php:84
+msgid "Email From/Reply-To Name"
+msgstr ""
+
+#: admin/partials/settings.php:87
+msgid "Email from/reply-to name to use in send emails."
+msgstr ""
+
+#: admin/partials/settings.php:94
+msgid "Email from Name"
+msgstr ""
+
+#: admin/partials/settings.php:102
+msgid "Email From Address"
+msgstr ""
+
+#: admin/partials/settings.php:105
+msgid "Email from address to use in send emails."
+msgstr ""
+
+#: admin/partials/settings.php:120
+msgid "Reply To Address"
+msgstr ""
+
+#: admin/partials/settings.php:123
+msgid "Reply To address to use."
+msgstr ""
+
+#: admin/partials/settings.php:138
+msgid "Email Template Style"
+msgstr ""
+
+#: admin/partials/settings.php:141
+msgid "Add your custom CSS style to email template. These style will be applied on top of default style."
+msgstr ""
+
+#: admin/partials/settings.php:157
+msgid "Roles"
+msgstr ""
+
+#: admin/partials/settings.php:160
+msgid "Select role(s) that has access to send emails. Administrators by default has this access."
+msgstr ""
+
+#: admin/partials/settings.php:162
+msgid "Be careful that only intended users have this access."
+msgstr ""
+
+#: admin/partials/settings.php:191
+msgid "Social Media"
+msgstr ""
+
+#: admin/partials/settings.php:194
+msgid "Add link to your social media pages and this will be used on email you send to your users. Leave empty if you don't want it included."
+msgstr ""
+
+#: admin/partials/settings.php:196
+msgid "Please use full URL to social media profile."
+msgstr ""
+
+#: admin/partials/settings.php:223
+msgid "Outgoing Email rate"
+msgstr ""
+
+#: admin/partials/settings.php:226
+msgid "How many queued emails should this plugin send every 5 minutes."
+msgstr ""
+
+#: admin/partials/settings.php:229
+msgid "Plugin adds WordPress cron that runs every 5 minutes. Depending on your requirement, you can adjust the amount of outgoing emails every 5 minutes. By default plugin sends 1 email every 5 minutes."
+msgstr ""
+
+#: admin/partials/settings.php:249
+msgid "How many days should the send email via queue be saved?"
+msgstr ""
+
+#: admin/partials/settings.php:252
+msgid "It is a good idea to delete these emails periodically. By default these emails are not deleted. Please specify a day here. Any email older than this will be deleted automatically. Set it to 0 if you don't want to delete."
+msgstr ""
+
+#: admin/partials/settings.php:269
+msgid "Email theme to use by default"
+msgstr ""
+
+#: admin/partials/settings.php:272
+msgid "Choose theme to use by default for emails you send"
+msgstr ""
+
+#: admin/partials/settings.php:275
+msgid "Use this option to set default email color scheme. Choose default option to use non styled email theme. You can style this theme by adding CSS in Email template style."
+msgstr ""
+
+#: admin/partials/settings.php:302
+msgid "Use queue by default"
+msgstr ""
+
+#: admin/partials/settings.php:305
+msgid "Enable this option to use queue system by default?"
+msgstr ""
+
+#: admin/partials/settings.php:308
+msgid "To stay within the limit of your email service provider, it is recommended that you use queue by default."
+msgstr ""
+
+#: admin/partials/settings.php:328
+msgid "Days to save email logs for"
+msgstr ""
+
+#: admin/partials/settings.php:331
+msgid "Email log are saved in separate file for each day. Please specify how many days of log you want to save."
+msgstr ""
+
+#: admin/partials/settings.php:334
+msgid "By default, 90 days worth of logs are saved. Older logs will be deleted automatically."
+msgstr ""
+
+#: admin/partials/settings.php:361
+msgid "Save Settings"
+msgstr ""
+
+#: admin/partials/settings.php:382
+msgid "Please configure email settings before sending emails."
+msgstr ""
+
+#: admin/partials/settings.php:384
+msgid "If the settings fields are left blank, the corresponding section will not be added to email."
+msgstr ""
+
+#: admin/partials/settings.php:386
+msgid "Example: If you leave logo setting blank, no logo will be added to outgoing emails."
+msgstr ""
+
+#: admin/partials/settings.php:394
+msgid "CAUTION"
+msgstr ""
+
+#: admin/partials/settings.php:395
+msgid "Email from Name and Email from Address can be overwritten by other plugins."
+msgstr ""
+
+#: admin/partials/settings.php:397
+msgid "If from Name and from Email set here is not working, please make sure that other plugins are not overriding."
+msgstr ""
+
+#: admin/partials/settings.php:407
+#: admin/partials/settings.php:412
+msgid "Account"
+msgstr ""
+
+#: admin/partials/settings.php:408
+msgid "Manage your subscription from here."
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:12
+#: admin/partials/templates/email-template-queue.php:14
+msgid "Add emails to Queue?"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:17
+msgid "Yes"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:18
+msgid "No"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:23
+msgid "Select email theme to use"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:38
+#: admin/partials/templates/email-template-queue.php:41
+msgid "Select email template to use"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:52
+msgid "Scheduled Date"
+msgstr ""
+
+#: admin/partials/templates/email-template-queue.php:54
+msgid "If you select future date, email will be sent only at the start of that date. By default, emails are sent immediately. This only work if you add emails to queue. Please note that if there are emails in queue already at the processing date, those email will be send first."
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:3
+msgid "Placeholder"
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:4
+msgid "You can use following placeholder to replace user detail on email."
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:10
+msgid "Use this placeholder to display user ID."
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:16
+msgid "Use this placeholder to display username"
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:22
+msgid "Use this placeholder to display user display name"
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:28
+msgid "Use this placeholder to display user first name"
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:34
+msgid "Use this placeholder to display user last name"
+msgstr ""
+
+#: admin/partials/templates/placeholder-instruction.php:40
+msgid "Use this placeholder to display user email"
+msgstr ""
+
+#: admin/partials/users-email.php:7
+msgid "Send email to selected users"
+msgstr ""
+
+#: admin/partials/users-email.php:20
+msgid "You have high number of users in the system so this page might take some time to load all users. Please consider using Role Email instead."
+msgstr ""
+
+#: admin/partials/users-email.php:39
+msgid "Select Users"
+msgstr ""
+
+#: admin/partials/users-email.php:46
+msgid "Filter users using user ID range"
+msgstr ""
+
+#: admin/partials/users-email.php:49
+msgid "Minimum ID"
+msgstr ""
+
+#: admin/partials/users-email.php:52
+msgid "Maximum ID"
+msgstr ""
+
+#: admin/partials/users-email.php:64
+msgid "Username"
+msgstr ""
+
+#: admin/partials/users-email.php:66
+msgid "Display Name"
+msgstr ""
+
+#: admin/partials/users-email.php:147
+msgid "Hide columns"
+msgstr ""
+
+#: admin/partials/users-email.php:172
+msgid "Send email to individual users by selecting them from the user list."
+msgstr ""
+
+#: partials/donate.php:9
+msgid "Help plugin development"
+msgstr ""
+
+#: partials/donate.php:20
+msgid "Send Users Email PRO"
+msgstr ""
+
+#: partials/donate.php:24
+msgid "Upgrade Now!"
+msgstr ""
+
+#: partials/donate.php:36
+msgid "Love"
+msgstr ""
+
+#: partials/donate.php:38
+msgid "Five Star"
+msgstr ""
+
+#: partials/toast.php:6
+msgid "Success"
+msgstr ""
+
+#: partials/toast.php:17
+#: partials/warnings.php:4
+msgid "Warning"
+msgstr ""
+
+#: partials/warnings.php:6
+msgid "Your PHP max execution time is %d seconds. Please consider increasing this limit if you are trying to send email to lots of users at once."
+msgstr ""
+
+#: partials/warnings.php:8
+msgid "Consider sending email to users in batches. Email User feature allows you to filter users by ID range and can be used to send email in batches."
+msgstr ""
+
+#: partials/warnings.php:12
+msgid "It is highly recommend that you use plugin queue system."
+msgstr ""
