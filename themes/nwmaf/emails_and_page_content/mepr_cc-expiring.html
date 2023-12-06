@@ -1,0 +1,65 @@
+<div id="header" style="width: 680px; padding: 0px; margin: 0 auto; text-align: center;">
+    <img style="height: 100px; width: 100px;"
+        src="https://www.nwmaf-conference.org/wp-content/uploads/2020/12/NWMAFLogo-450px-Color.png" />
+    <h1 style="font-size: 30px; margin-bottom: 0;">Your Credit Card is Expiring on
+        {$subscr_cc_month_exp}/{$subscr_cc_year_exp}</h1>
+    <h2 style="margin-top: 0; color: #999; font-weight: normal;">{$blog_name}</h2>
+</div>
+<div id="body" style="width: 600px; background: white; padding: 40px; margin: 0 auto; text-align: left;">
+    <div style="margin-bottom: 20px;">Your Credit Card will expire before your next billing on {$blog_name}.</div>
+    <div style="margin-bottom: 20px;">To avoid any interruptions in your subscription, please <a
+            href="{$subscr_update_url}">login to your account</a> and update your credit card information.</div>
+    <table class="transaction" style="clear: both;">
+        <tbody>
+            <tr>
+                <th style="text-align: left;">Website:</th>
+                <td>{$blog_name}</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Subscription:</th>
+                <td>{$product_name}</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Subscription Num:</th>
+                <td>{$subscr_num}</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Credit Card Num:</th>
+                <td>{$subscr_cc_num}</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Credit Card Exp:</th>
+                <td>{$subscr_cc_month_exp}/{$subscr_cc_year_exp}</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">Next Billing:</th>
+                <td>{$subscr_next_billing_at}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="labels" style="clear: both; width: 100%;">
+        <tbody>
+            <tr>
+                <td style="vertical-align: top;">
+                    <fieldset class="billing"
+                        style="border: none; border-top: 1px solid #dedede; margin: 20px 40px 20px 0;">
+                        <legend style="display: block; font-weight: bold; color: #999;">Billed to</legend>
+                        <address style="font-style: normal;">
+                            <div class="address_name" style="display: block; font-size: 115%;">
+                                <big>{$user_full_name}</big>
+                            </div>
+                            <div class="address_email" style="display: block;">{$user_email} (<b>{$user_login}</b>)
+                            </div>
+                            <div class="address_address" style="display: block;">{$user_address}</div>
+                        </address>
+                    </fieldset>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="section" style="display: block;  margin-top: 24px; margin-bottom: 12px;">Please direct any questions to
+    <a href="mailto:members@nwmaf.org">Membership Coordinator.</a>
+</div>
+<div class="section" style="display: block; margin-bottom: 12px;">Warmest regards,</div>
+<div class="section" style="display: block; margin-bottom: 24px;">Your NWMAF Board of Directors</div>

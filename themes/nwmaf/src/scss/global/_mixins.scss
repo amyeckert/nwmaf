@@ -1,0 +1,330 @@
+// sass-lint:disable-all
+
+/*
+ * media queries/ breakpoints
+ *
+ ********************************************************************************/
+// to use:
+// @include bp(small) {
+// 	@include font-size(55);
+// 	margin: 30px 0;
+// }
+
+// @mixin bp($point) {
+//     @if ($MQs) {
+//         @if $point == xsmall {
+//             @media #{$mq-xsmall} {
+//                 @content;
+//             }
+//         } @else if $point == small {
+//             @media #{$mq-small} {
+//                 @content;
+//             }
+//         } @else if $point == medium {
+//             @media #{$mq-medium} {
+//                 @content;
+//             }
+//         } @else if $point == large {
+//             @media #{$mq-large} {
+//                 @content;
+//             }
+//         } @else if $point == xlarge {
+//             @media #{$mq-xlarge} {
+//                 @content;
+//             }
+//         } @else if $point == retina {
+//             @media #{$mq-retina} {
+//                 @content;
+//             }
+//         }
+//     } @else {
+//         @if $point != retina {
+//             @content;
+//         }
+//     }
+// }
+
+// @mixin bp-max($point) {
+//     @if $point == small {
+//         @media (max-width: ($bp-small - 1px)) {
+//             @content;
+//         }
+//     } @else if $point == medium {
+//         @media (max-width: ($bp-medium - 1px)) {
+//             @content;
+//         }
+//     } @else if $point == large {
+//         @media (max-width: ($bp-large - 1px)) {
+//             @content;
+//         }
+//     }
+// }
+
+//Arbitrary Media Query Mixin
+// @mixin bp-arb($val) {
+//     @if ($MQs) {
+//         @media only screen and (min-width: #{$val}px) {
+//             @content;
+//         }
+//     }
+// }
+
+/*
+ * Font-size and line-height
+ *
+ ************************************************************/
+
+@mixin font-size($pixelSize: $baseFontSize) {
+    font-size: #{$pixelSize / $baseFontSize}rem;
+    font-size: #{$pixelSize}px;
+}
+
+@mixin line-height($pixelSize: $baseLineHeight) {
+    line-height: #{$pixelSize / $baseFontSize}rem;
+    line-height: #{$pixelSize}px;
+}
+
+/*
+ *Inline link hover animation
+ *
+ ************************************************************/
+
+@mixin inline-link-hover($color: '#96e5df',
+    $opacity: 1,
+    $height-start: 200%, //200% is actually visually 100%
+    $height-hover: 200%, //200% is actually visually 100%
+    $height-active: 200%, //200% is actually visually 100%
+    $offset-start: 7.5%,
+    $offset-hover: 42.5%,
+    $offset-active: 60%,
+    $duration: 160ms,
+    $easing: ease,
+    $element: '',
+    $from: 'bottom'
+
+) {
+    & #{$element} {
+        text-decoration: none;
+        cursor: pointer;
+        background-size: 100% ($height-start);
+        background-repeat: no-repeat;
+
+        @if $from =='bottom' {
+            background-image: -webkit-linear-gradient(bottom, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+            background-image: -moz-linear-gradient(bottom, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+            background-image: linear-gradient(to top, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+
+            background-position: left 0 top ($offset-start);
+        }
+
+        @else if $from =='top' {
+            background-image: -webkit-linear-gradient(top, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+            background-image: -moz-linear-gradient(top, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+            background-image: linear-gradient(to bottom, rgba($color, $opacity) 50%, rgba(0, 0, 0, 0) 50.1%);
+
+            background-position: left 0 bottom ($offset-start);
+        }
+
+        -webkit-transition: background $duration $easing;
+        -moz-transition: background $duration $easing;
+        transition: background $duration $easing;
+    }
+
+
+    &:focus #{$element},
+    &:hover #{$element},
+    &:active #{$element} {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &:focus #{$element} {
+        outline: none;
+    }
+
+    &:hover #{$element} {
+        background-size: 100% ($height-hover);
+
+        @if $from =='bottom' {
+            background-position: left 0 top ($offset-hover);
+        }
+
+        @else if $from =='top' {
+            background-position: left 0 bottom ($offset-hover);
+        }
+    }
+
+
+    &:active #{$element} {
+        background-size: 100% $height-active;
+
+        @if $from =='bottom' {
+            background-position: left 0 top ($offset-active);
+        }
+
+        @else if $from =='top' {
+            background-position: left 0 bottom ($offset-active);
+        }
+    }
+
+}
+
+/*
+ * define BEM naming conventions
+ *
+ ************************************************************/
+
+// Block Element
+// @param {String} $element - Element name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+// Block Modifier
+// @param {String} $modifier - Modifier name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+// @alias element
+@mixin bem-e($element) {
+    @include element($element) {
+        @content;
+    }
+}
+
+// @alias modifier
+@mixin bem-m($modifier) {
+    @include modifier($modifier) {
+        @content;
+    }
+}
+
+/*
+ * retina background image
+ *
+ ************************************************************/
+
+@mixin retina() {
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+/*
+ * typography
+ *
+ ************************************************************/
+
+// font size - unitless - @include font-size(16)
+@mixin font-size($font-size: $base-font-size) {
+    $rem: ($font-size / $base-font-size);
+
+    font-size: $font-size * 1px;
+    font-size: #{$rem}rem; // sass-lint:disable-line no-duplicate-properties
+}
+
+// line height - unitless - @include line-height(16);
+// @mixin line-height($line-height: $base-line-height) {
+//     $rem: ($base-line-height / $line-height);
+//
+//     line-height: $line-height * 1.5;
+// }
+
+// unitless line height mixin
+@mixin line-height($font-size, $line-height: $font-size) {
+    line-height: ($line-height / $font-size);
+}
+
+// text truncate - requires inline-block or block for proper styling
+@mixin text-truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// shrinks the bottom margin of H5/.h5 and removes top margin of following P
+// @mixin flush-title() {
+//     margin-bottom: ($base-margin / 3);
+
+//     & + p { margin-top: 0; }
+// }
+
+/*
+ * vertical alignment of content in container
+ *
+ ************************************************************/
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*
+ * screen reader only
+ *
+ ************************************************************/
+
+@mixin u-sr-only() {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* 1 */
+    clip: rect(0 0 0 0);
+}
+
+/*
+ * custom bootstrap mixin for compact grid columns
+ *
+ ************************************************************/
+
+// @mixin make-grid-compact-columns($i: 1, $list: '.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}') {
+
+//     @for $i from (1 + 1) through $grid-columns {
+//         $list: '#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}';
+//     }
+
+//     #{$list} {
+//         position: relative;
+//         // Inner gutter via padding
+//         padding-right: floor(($grid-gutter-width / 3));
+//         padding-left: ceil(($grid-gutter-width / 3));
+//         // Prevent columns from collapsing when empty
+//         min-height: 1px;
+//     }
+// }
+
+/*
+ * transitions
+ *
+ ************************************************************/
+
+@mixin placeholder() {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}

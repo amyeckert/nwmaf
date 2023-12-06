@@ -1,0 +1,126 @@
+.has-footnotes {
+
+    .footnote__counter {
+        counter-reset: footnotes; // Initialize a `footnotes` counter on the wrapper
+
+        sup {
+            position: relative;
+        }
+    }
+
+    .footnote__container {
+        margin-top: 2rem;
+        border-top: 1px solid color(neutral, light);
+        padding: 1rem;
+        scroll-snap-align: start;
+    }
+
+    .footnote__label {
+        padding: 0 3px;
+        text-decoration: none;
+        counter-increment: footnotes; // Increment the counter at each new reference
+        background-image: none !important;
+        outline: 1px solid transparent;
+
+        &:target { scroll-margin-top: 150px; }
+
+        // Adjusts scroll-top position to account for fixed header
+
+        &::after {
+            position: absolute;
+            top: 11px;
+            left: 0;
+            font-size: 14px;
+            color: $text-color;
+            cursor: pointer;
+            content: counter(footnotes); // display current state (#) of counter
+
+            // @media screen and (min-width: $size-xl) { color: $white; }
+        }
+
+        &.text-white::after { color: $white; }
+
+        &:hover,
+        &:focus,
+        &.has-focus {
+            outline: 1px solid color(neutral, base);
+        }
+    }
+
+    .footnote__item {
+        padding: 0 0 5px 5px;
+        font-size: 18px;
+        text-align: left;
+        border-left: 3px solid transparent;
+
+        &:target {
+            border-left: 1px solid color(neutral, base); // highlight the referenced footnote
+            scroll-margin-top: 300px;
+
+            &::marker {
+                color: $text-color;
+            }
+        }
+
+        a {
+            background-image: none;
+
+            &:hover {
+                color: $text-color;
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    .footnote__source-link {
+
+        &:focus,
+        &.has-focus {
+            outline: 1px solid $text-color;
+        }
+    }
+
+    .footnote__back-link {
+
+        &::after {
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            background-image: url('../../images/svg/icon-return.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+        }
+
+
+
+        &:focus,
+        &.has-focus { outline: 1px solid $text-color; }
+    }
+
+    ol { padding-left: 1rem; }
+
+    // -- footnotes in tables --//
+    tfoot {
+        text-align: left;
+
+        td {
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        td,
+        ol {
+            padding: 0;
+        }
+
+        .footnote__container {
+            margin-top: 0;
+            border-top: 0;
+            padding-left: 0;
+            scroll-snap-align: start;
+        }
+    }
+}

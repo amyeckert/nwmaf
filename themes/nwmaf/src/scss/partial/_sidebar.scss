@@ -1,0 +1,118 @@
+//sass-lint:disable no-ids
+//sass-lint:disable nesting-depth
+
+// .sidebar-primary (right)
+.sidebar-primary {
+
+    // reset all block areas
+    section.widget.widget_block {
+        border: 0;
+        background: color(default, light);
+        background-color: color(default, light);
+
+        &:first-of-type {
+            box-shadow: 2px 2px 4px 0 rgba(28, 28, 26, .1);
+            border: 1px solid rgba(28, 28, 26, .1);
+            border-top: 0;
+        }
+    }
+
+    h2 {
+        font-size: 1rem !important;
+        font-weight: 900 !important;
+    }
+
+    p {
+        line-height: $base-line-height;
+        font-family: $base-font !important;
+        font-weight: 400;
+        transition: line-height .5s;
+
+        a {
+            @include inline-link-hover($color: color(gold, base),
+                $offset-start: 15%,
+                $offset-hover: 100%,
+                $offset-active: 130%,
+                $opacity: 1,
+                $from: 'bottom'
+            );
+            padding: 0 1px;
+            font-weight: normal;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    // overrides plugin styles
+    .tribe-events-widget-countdown {
+        margin: 0 1rem;
+        box-shadow: $box-shadow-offset-4-blue;
+        border: 0;
+        background: color(gold, base);
+        background-color: color(gold, base);
+
+        @media screen and (min-width: 1013px) {
+            margin: 0;
+        }
+
+        a {
+            @include inline-link-hover($color: color(default, dark),
+                $offset-start: 15%,
+                $offset-hover: 100%,
+                $offset-active: 130%,
+                $opacity: 1,
+                $from: 'bottom'
+            );
+            padding: 0 5px;
+            font-weight: 500;
+            transition: $transition !important;
+
+            &:hover {
+                color: color(default, light) !important;
+            }
+        }
+
+        h2 {
+            font-size: 1rem !important;
+            font-weight: 900 !important;
+        }
+    }
+
+    .tribe-events-widget-countdown__number,
+    .tribe-events-widget-countdown__under.tribe-events-widget-countdown__under--days,
+    .tribe-events-widget-countdown__under.tribe-events-widget-countdown__under--hours,
+    .tribe-events-widget-countdown__under.tribe-events-widget-countdown__under--minutes {
+        color: $text-color !important;
+    }
+}
+
+// column blocks as right sidebar
+.sidebar-primary,
+#tribe-events-content .wp-block-column {
+
+    // Join and Donate CTA buttons
+    .sidebar--cta {
+
+        .sidebar__button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            @media screen and (min-width: $bp-small) {
+                justify-content: flex-start;
+            }
+
+            @media screen and (min-width: $bp-medium) {
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: $bp-large) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}

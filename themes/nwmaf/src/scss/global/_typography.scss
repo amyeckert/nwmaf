@@ -1,0 +1,196 @@
+/*
+ * global typographic treatment
+ *
+ ************************************************************/
+
+html,
+body,
+p[data-block-type='core'],
+figcaption,
+p {
+    line-height: $base-line-height !important;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    color: $text-color;
+
+    // make everything look a little nicer in webkit
+    -webkit-font-smoothing: antialiased;
+}
+
+b,
+strong { font-weight: 600 !important; }
+
+h1,
+.h1 {
+    font-family: $base-font;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+    @media (min-width: 768px) { font-size: 3rem; }
+
+}
+
+
+h1.post-title {
+    font-family: $base-font;
+    font-size: 2.5rem;
+
+    @media (min-width: 768px) { font-size: 3rem; }
+}
+
+h2,
+.h2 {
+    font-family: $base-font;
+    font-size: 2rem;
+
+    @media (min-width: 768px) { font-size: 2.5rem; }
+}
+
+h3,
+.h3 {
+    font-family: $base-font;
+    font-size: 1rem;
+    font-weight: 600;
+
+
+    @media (min-width: 768px) { font-size: 1.5rem !important; }
+}
+
+h4,
+.h4 {
+    font-family: $base-font;
+    font-size: .8rem;
+    font-weight: 600;
+
+
+    @media (min-width: 768px) { font-size: 1.5rem !important; }
+}
+
+dl>div {
+    flex-flow: column nowrap;
+    border-top: 1px solid color(neutral, light);
+    padding-top: 1rem;
+
+    @media (min-width: 768px) {
+        flex-flow: row nowrap;
+    }
+}
+
+dt {
+    display: block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        display: inline-block;
+        width: 27%;
+    }
+}
+
+dd {
+    display: block;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        display: inline-block;
+        width: 75%;
+    }
+}
+
+a { text-decoration: none !important; }
+
+// WYSIWYG and page styles
+.wp-block-group,
+.tribe-events-single-event-description,
+.tribe-events-single,
+.post-content {
+
+    li,
+    p {
+        line-height: $base-line-height;
+        font-family: $base-font !important;
+        // font-weight: 400;
+        transition: line-height .5s;
+
+        &.description-label {
+            text-transform: uppercase;
+            line-height: $base-line-height !important;
+            font-size: 18px !important;
+            font-weight: 700;
+        }
+    }
+
+    &.btn--group {}
+
+    p>a,
+    a {
+        @include inline-link-hover($color: color(neutral, darker),
+            $offset-start: 4%,
+            $offset-hover: 15%,
+            $offset-active: 15%,
+            $opacity: 1,
+            $from: 'bottom'
+        );
+        padding: 0;
+        font-weight: normal;
+        transition: $transition !important;
+
+        &:hover {
+            text-decoration: none;
+            color: color(default, dark);
+        }
+
+        // TO DO add specifics for bg--blue class with link hover
+        &.soliloquy-pager-link,
+        &.woocommerce-loop-product__link,
+        &.image-row__inner {
+            background-image: none !important;
+            color: color(default, dark) !important;
+
+            &:hover {
+                text-decoration: underline;
+                color: color(default, dark) !important;
+            }
+        }
+    }
+}
+
+span.description-label {
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: $base-font;
+    font-weight: 600;
+
+    @media screen and (min-width: $bp-large) {
+        font-size: 2rem;
+    }
+
+    span {
+
+        @media screen and (min-width: $bp-large) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+ul {
+    margin: 0 0 1rem;
+
+    li {
+        margin-left: 1rem;
+    }
+
+    &.btn--group {
+
+        li {
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+    }
+}

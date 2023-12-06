@@ -1,0 +1,506 @@
+// GraviityView Member and Instructor Directories -------//
+//sass-lint:disable no-url-protocols
+//sass-lint:disable no-url-domains
+//sass-lint:disable no-ids
+
+.gravityview {
+    .further-reading {
+        // display: none;
+    }
+}
+
+#gv-view-11150-1, // Resources
+#gv-view-10441-1, // Certified Instructor Directory
+#gv-view-9119-1 { // Member Directory
+
+    .gv-widgets-header {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid color(neutral, base);
+        width: 100%;
+
+        select {
+            width: 100%;
+            font-weight: 400;
+            padding: 8px 12px;
+            max-width: 27.75em;
+            min-height: 37px;
+            background: #f7f7f7;
+            color: #333;
+            border: 1px solid #d4d4d4;
+            border-radius: 0;
+            transition: background .2s;
+            background-image: url('../../images/svg/drop-down-arrow.svg');
+            background-position: 97% 50%;
+            background-repeat: no-repeat;
+            background-size: 16px 16px;
+        }
+
+        .gv-search-box-submit { align-items: center; }
+
+        .gv-search-button {
+            border: 1px solid color(neutral, dark);
+            background: color(neutral, light);
+            line-height: normal;
+            letter-spacing: 1px !important;
+            font-size: 20px !important;
+            font-weight: 500;
+
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: $box-shadow-offset-4-base;
+                background: color(neutral, lighter);
+                color: color(neutral, dark);
+            }
+        }
+
+        .gv-search-clear {
+            @include inline-link-hover($color: color(green, dark),
+                $offset-start: 15%,
+                $offset-hover: 100%,
+                $offset-active: 130%,
+                $opacity: 1,
+                $from: 'bottom'
+            );
+
+            margin-left: 1rem;
+            padding: 0 5px;
+            font-family: $base-font;
+            font-weight: 400 !important;
+            transition: $transition !important;
+
+            &:hover {
+                color: color(default, light) !important;
+            }
+        }
+
+        a.page-numbers {
+            background-image: none;
+            border: 1px solid transparent;
+
+            &:hover {
+                color: color(default, dark);
+                border: 1px solid color(default, dark);
+            }
+        }
+
+        span.current { font-weight: bold !important; }
+
+
+    }
+
+    .gv-list-container {
+
+        &.gv-container-no-results {
+            .gv-list-view-title { background-color: color(default, light) !important; }
+        }
+
+        .gv-list-view-title {
+            display: inline-flex;
+            flex-flow: row wrap;
+            align-items: center;
+            border-bottom: 0;
+            padding: .5rem 1rem;
+            width: 100%;
+            background-color: color(neutral, lighter);
+
+            @media screen and (min-width: $bp-xsmall) {
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .gv-table-view {
+        a.gv-sort {
+            background-image: none;
+
+            &:hover { color: color(default, dark); }
+        }
+
+    }
+
+    .gv-widgets-footer {
+        width: 100%;
+    }
+
+    // Directory Home view show all with search
+    .gv-list-multiple-container {
+
+        // .gv-list-view { border: 1px solid color(neutral, light); }
+
+        .gv-list-view-title {
+            border: 0;
+
+            h3 {
+                margin: 0 !important;
+            }
+        }
+
+        .gv-field-17-entry_link {
+            margin-bottom: 0;
+
+            // display as button
+            p>a {
+                background-image: none;
+
+                &:hover {
+                    color: color(default, dark);
+                }
+            }
+        }
+
+        .gv-list-view-footer {
+            border: 0;
+            padding: 0 1em .5rem;
+            background-color: color(neutral, lighter);
+        }
+
+        .gv-field-17-edit_link a {
+
+            @include inline-link-hover($color: color(gold, base),
+                $offset-start: 15%,
+                $offset-hover: 100%,
+                $offset-active: 130%,
+                $opacity: 1,
+                $from: 'bottom'
+            );
+            padding: 0 1px;
+            font-weight: normal;
+            transition: $transition !important;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .gv-list-view-content {
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 1rem;
+            background-color: color(neutral, lighter);
+
+            .profile__instructor-location,
+            .profile__instructor-info {
+                display: flex;
+                flex-flow: row wrap;
+
+                @media screen and (min-width: $bp-small) {
+                    flex-flow: row nowrap;
+                }
+
+                .col-left,
+                .col-right {
+                    width: 100%;
+
+                    @media screen and (min-width: $bp-small) {
+                        width: 45%;
+                    }
+                }
+
+                .col-left {
+                    @media screen and (min-width: $bp-small) {
+                        margin-right: 10%;
+                    }
+                }
+            }
+
+            .profile__ask {
+                background-color: color(blue, base);
+                color: color(default, light);
+            }
+
+            .profile__instructor-info {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                background-color: color(orange, light);
+
+                @media screen and (min-width: $bp-small) {
+                    flex-flow: column nowrap;
+                }
+            }
+
+            .profile__instructor-location {
+
+                p,
+                address p {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    background-image: none !important;
+                    font-weight: 700;
+                    color: color(default, dark);
+                    transition: $transition;
+
+                    &:active,
+                    &:hover {
+                        text-decoration: underline !important;
+                    }
+
+                    &:focus {
+                        outline: auto;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+// Certified Instructor Directory
+#gv-view-10441-1 {
+
+    .gv-search-field-checkbox {
+        flex: 1 1 14em;
+    }
+
+    .gv-list-view { border: 0; }
+
+    .gv-list-view-title {
+        color: $white;
+        background-color: color(neutral, darker) !important;
+    }
+
+    .gv-list-view-subtitle {
+
+        a {
+            color: $white;
+            background-image: none;
+
+            &:hover,
+            &:active {
+                text-decoration: underline !important;
+            }
+        }
+
+
+    }
+
+    .gv-list-view-content-image {
+        padding: 0;
+        margin-right: 1rem;
+        border-right: 1px solid color(neutral, base);
+    }
+}
+
+
+// Member Directory
+#gv-view-9119-1 {
+
+    .gv-search-field-checkbox {
+        flex: 1 1 10em;
+    }
+}
+
+//  single view
+.gv-container-9119.gv-list-single-container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    background-color: color(neutral, lighter);
+
+    .gv-list-view { border: 0 !important; }
+
+    .gv-list-view-title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
+
+        .gv-field-17-edit_link {
+            margin-bottom: 0;
+
+            a {
+                padding: .5rem;
+                font-size: 1rem;
+            }
+        }
+
+        .gv-field-17-4 { display: none; }
+    }
+
+    .gv-list-view-subtitle {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        width: 100%;
+
+        h4 > .ally-member {
+            height: 40px;
+            width: 40px;
+            margin-left: 2rem;
+            background: url('https://nwmaf.org/wp-content/uploads/2023/05/hug-1.svg');
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    .gv-list-view-content {
+        padding: 1rem 1rem 0;
+    }
+
+    .gv-list-view-content-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        padding: .5rem;
+        max-width: 75%;
+        min-height: 200px;
+        background-color: color(neutral, light);
+        background-image: url('../../images/svg/NWMAFLogo-inner-grey--light.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+
+
+        .profile__image {}
+
+        img {
+            margin: 0 auto;
+            width: auto;
+            max-height: 200px !important;
+            background-color: color(neutral, light);
+        }
+    }
+
+    .gv-list-view-content-description {
+
+        p>a {
+            background-image: none;
+
+            &:hover,
+            &:active {
+                text-decoration: underline !important;
+            }
+
+        }
+
+        .gv-field-label {
+            font-weight: bold;
+        }
+    }
+
+    .profile__instructor-location,
+    .profile__instructor-info,
+    .profile__ask {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 1rem;
+        padding: 1rem;
+
+        @media screen and (min-width: $bp-small) {
+            flex-flow: row nowrap;
+        }
+
+        .col-left,
+        .col-right {
+            width: 100%;
+
+            @media screen and (min-width: $bp-small) {
+                width: 45%;
+            }
+        }
+
+        .col-left {
+            @media screen and (min-width: $bp-small) {
+                margin-right: 10%;
+            }
+        }
+    }
+
+    .profile__ask {
+        background-color: color(blue, base);
+        color: color(default, light);
+    }
+
+    .profile__instructor-info {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background-color: color(orange, light);
+
+        @media screen and (min-width: $bp-small) {
+            flex-flow: column nowrap;
+        }
+    }
+
+    .profile__instructor-location {
+        background-color: color(orange, light);
+
+        p,
+        address p {
+            margin-bottom: 0;
+        }
+
+        a {
+            background-image: none !important;
+            font-weight: 700;
+            color: color(default, dark);
+            transition: $transition;
+
+            &:active,
+            &:hover {
+                text-decoration: underline !important;
+            }
+
+            &:focus {
+                outline: auto;
+            }
+        }
+    }
+}
+
+// Edit profile view
+// (most styles goverened by forms.scss)
+.gv-edit-entry-wrapper {
+    a.btn-danger {
+        outline: 0;
+        border: 0;
+        padding: 1rem !important;
+        background-color: color(default, light);
+        font-size: 20px !important;
+        font-weight: 500;
+        color: color(default, dark);
+
+        &:active,
+        &:focus,
+        &:hover {
+            box-shadow: none;
+            text-decoration: underline !important;
+            color: color(error, base);
+        }
+
+        &:focus {
+            outline: auto;
+        }
+    }
+
+    .gv-button-update {
+        background-color: color(green, light);
+
+        &:hover {
+            background-color: color(green, dark);
+            color: color(default, light);
+        }
+    }
+
+    .gv-button-cancel {
+        box-shadow: none;
+        font-size: 20px !important;
+        font-weight: 500;
+        color: color(default, dark);
+        transition: $transition;
+
+        &:focus,
+        &:active,
+        &:hover {
+            text-decoration: underline !important;
+            color: color(green, dark);
+        }
+    }
+}

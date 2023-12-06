@@ -1,0 +1,243 @@
+//sass-lint:disable no-ids
+//sass-lint:disable no-important
+
+// MemberPress
+
+
+.mepr-unauthorized-message {
+
+    a.btn {
+
+        &.cta {
+            padding: .5rem 1rem;
+            width: auto;
+        }
+    }
+
+}
+
+.mepr-unauthorized-message+.mepr-login-form-wrap>.mepr-login-link { display: none; }
+
+.mepr-price-box-button { display: none !important; }
+
+.mepr-price-box-heading {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .btn {
+        margin: 0 auto;
+        width: 90%;
+
+        @media screen and (min-width: $bp-medium) {
+            max-width: 70%;
+        }
+
+        @media screen and (min-width: $bp-large) {
+            max-width: 55%;
+        }
+
+        &.btn--outline-default {
+            margin-bottom: 1rem;
+            background-color: transparent !important;
+        }
+    }
+
+    .btn--group .btn {
+        justify-content: space-evenly;
+
+        @media screen and (min-width: $bp-medium) { max-width: 47%; }
+    }
+}
+
+.mepr-price-menu.fixed .mepr-price-boxes {
+
+    .mepr-price-box {
+
+        @media (min-width: 601px) { width: 100% !important; }
+    }
+
+    .mepr-price-box-title {
+        text-align: center;
+        font-size: $h1-font-size;
+    }
+}
+
+.mepr-price-box-benefits-item {
+    position: relative;
+    padding-left: 15px !important;
+    font-style: italic;
+
+    &::before {
+        position: absolute;
+        top: 11px;
+        left: -13px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../../images/svg/check-mark.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+    }
+
+}
+
+#sustaining {
+
+    .mepr-most-popular { background-color: color(tomato, base) !important; }
+
+    .mepr-price-box-benefits-item:first-of-type {
+        font-weight: 700;
+        font-style: normal;
+
+        &::before { display: none; }
+    }
+}
+
+#regular {
+    margin: 0 auto;
+    width: 100%;
+
+    //ally
+    .mepr-most-popular { background-color: color(blue, base) !important; }
+
+    // youth and adult
+    #mepr-price-box-5640,
+    #mepr-price-box-5638 {
+
+        .mepr-most-popular { background-color: color(green, base) !important; }
+    }
+}
+
+.mepr-price-box.highlighted {
+    border: 1px solid color(tomato, base) !important;
+    background-color: color(neutral, lighter) !important;
+
+    .mepr-most-popular {
+        border-right: 2px solid color(tomato, base) !important;
+        border-bottom: 1px solid color(tomato, base) !important;
+        background-color: color(tomato, base) !important;
+        color: transparent !important;
+    }
+
+    .mepr-price-box-heading,
+    .mepr-price-box-benefits {
+        background-color: color(neutral, lighter) !important;
+    }
+}
+
+// membership single pages
+.memberpressproduct {
+
+    .gifts__container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        background-color: color(neutral, light);
+
+        @media screen and (min-width: $bp-xsmall) {
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        figure.gift {
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: center;
+            align-items: center;
+            margin: 1rem auto;
+            width: 180px;
+
+            @media screen and (min-width: $bp-xsmall) {
+                width: 44%;
+            }
+
+            img {
+                margin: 0 auto;
+                width: auto;
+                height: 100%;
+                max-height: 150px;
+            }
+
+            figcaption {
+                margin-top: .5rem;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+.mp_wrapper {
+
+    form.mepr-signup-form.mepr-form {
+
+        @media screen and (min-width: $bp-992) {
+            border-top: 1px solid color(default, dark);
+            padding-top: 1rem;
+            width: 35% !important;
+        }
+
+        .mp-form-submit input[type='submit'] {
+            border: 1px solid color(primary, base);
+            padding: .5rem 3rem;
+            background-color: color(primary, base);
+            font-size: $base-font-size;
+            color: color(default, light);
+
+            &:active,
+            &:hover { box-shadow: $box-shadow-offset-4-base; }
+
+        }
+    }
+
+    .mepr-form {
+
+        input[type='submit'] {
+            border: 1px solid color(neutral, dark);
+            background: color(neutral, light);
+        }
+
+        input[type='submit']:hover,
+        input[type='submit']:active,
+        input[type='submit']:focus {
+            box-shadow: $box-shadow-offset-4-base;
+            background: color(neutral, lighter);
+            color: color(neutral, dark);
+        }
+    }
+
+    #mepr-account-nav {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 0;
+
+        span.mepr-nav-item {
+            display: block;
+
+            a {
+
+                display: block;
+                margin-bottom: .5rem;
+                border: 1px solid color(default, dark);
+                padding: .375rem .5rem;
+                background-color: color(default, light) !important;
+                background-image: none;
+
+                &:active,
+                &:hover {
+                    box-shadow: $box-shadow-offset-4-base;
+                    color: color(neutral, darker);
+                }
+            }
+        }
+    }
+
+    #mepr-account-user-message {
+        margin-bottom: 1rem;
+        box-shadow: $box-shadow-offset-4-green;
+        border: 1px solid color(green, dark);
+        padding: 1rem;
+        background-color: color(green, lighter);
+    }
+}

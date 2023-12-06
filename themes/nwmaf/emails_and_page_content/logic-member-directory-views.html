@@ -1,0 +1,231 @@
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||Bio"]
+<h2 class="h3">Bio</h2>
+<p>{Bio :18}</p>
+[/gvlogic]
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||Personal website”]
+<a href="{Personal Website:5}" rel="noopener noreferrer nofollow" target="_blank">Personal Website</a>
+[/gvlogic]
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||I'd like to know more about...”]
+<strong>I'd like to know more about...</strong>{I\'d like to know more about...:19:}
+[/gvlogic]
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||Ask me about...
+”]
+<strong>Ask me about...</strong>{Ask me about...:20:}
+[/gvlogic]
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||City||State"]
+Location: {Mailing Address (City):6.3} {Mailing Address (State / Province):6.4}
+[/gvlogic]
+
+<!-- [gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I filled
+in||State”]
+	{Mailing Address (State / Province):6.4}
+[/gvlogic] -->
+
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I
+filled||Do you teach in any of our three pillar areas?"]
+I teach {Do you teach in any of our three pillar areas?:7}
+[/gvlogic]
+
+[gvlogic if="{What information do you want to be included in your directory profile?:43}" is="All fields that I
+filled||what is the focus of your teaching"]
+{What is the focus of your teaching?:8}
+[/gvlogic]
+
+
+[gvlogic if="{Preferred Title:1}"]
+<span>{Preferred Title:1}</span>
+[/gvlogic]
+[gvlogic if="{Preferred Name (First):4.3}"]
+<span> {Preferred Name (First):4.3} </span>
+[/gvlogic]
+[gvlogic if="{Preferred Name (Last):4.6}"]
+<span>{Preferred Name (Last):4.6}</span>
+[/gvlogic]
+
+<h3>
+    Location
+</h3>
+[gvlogic if="{Mailing Address (City):6.3}"]
+<span>{Mailing Address (City):6.3} </span>
+[/gvlogic]
+
+[gvlogic if="{Mailing Address (State / Province):6.4}"]
+<span> {Mailing Address (State / Province):6.4} </span>
+[/gvlogic]
+
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+
+
+
+<!-- ---------instructor section -->
+[gvlogic if="{Do you teach in any of our three pillar areas?:7}"]
+<div class="profile__instructor-info">
+    [gvlogic2 if="{Do you teach in any of our three pillar areas?:7}"]
+    <span class="gv-field-label">I teach</span>{Do you teach in any of our three pillar areas?:7}
+    [/gvlogic2]
+    [gvlogic2 if="{What is the focus of your teaching?:8}"]
+    <span class="gv-field-label">My focus is </span>{What is the focus of your teaching?:8}
+    [/gvlogic2]
+</div>
+[/gvlogic]
+
+
+[gvlogic if="{Do you teach in any of our three pillar areas?:7}"]
+<div class="profile__instructor-location">
+    <div class="col-left">
+        [gvlogic2 if="{Business or School Website:13}"]
+        <a href="{Business or School Website:13}" target="_blank" rel="noopener noreferrer">{Business or
+            SchoolName:12}</a>
+        [/gvlogic2]
+        [gvlogic2 if="{Business Contact Email:14}"]
+        <a href="mailto:{Business Contact Email:14}">{Business Contact Email:14}</a>
+        [/gvlogic2]
+        [gvlogic2 if="{Business Contact Phone:15}"]
+        <a href="tel+{Business Contact Phone:15}">{Business Contact Phone:15}</a>
+        [/gvlogic2]
+    </div>
+    <div class="col-right">
+        <span class="gv-field-label">Address:</span>
+        <address>
+            [gvlogic2 if="{Business or School Address (Street Address):16.1}"]
+            <span>{Business or School Address (Street Address):16.1}</span>
+            [/gvlogic2]
+            [gvlogic2 if="{Business or School Address (Address Line 2):16.2}"]
+            <span>{Business or School Address (Address Line 2):16.2}</span>
+            [/gvlogic2]
+            [gvlogic2 if="{Business or School Address (City):16.3}"]
+            <span>{Business or School Address (City):16.3}, {Business or School Address (State /Province):16.4}, </span>
+            [/gvlogic2]
+            [gvlogic2 if="{Business or School Address (Country):16.6}"]
+            <span>{Business or School Address (Country):16.6}</span>
+            [/gvlogic2]
+        </address>
+    </div>
+</div>
+[/gvlogic]
+
+
+<!-- Instructor Directory View -->
+
+<div class="profile__instructor-location">
+    <div class="col-left">
+        [gvlogic if="{Email:14}"]
+        <span>Email: </span><a href="mailto:{Email:14}">{Email:14}</a>
+        [/gvlogic]
+        [gvlogic if="{Phone:15}"]
+        <span>Phone: </span><a href="tel:{Phone:15}">{Phone:15}</a>
+        [/gvlogic]
+    </div>
+</div>
+
+<!--  -->
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+[gvlogic if=""]
+<span> </span>
+[/gvlogic]
+
+
+
+<h3 class="mt-5 has-background has-large-font-size" style="background-color: #025e73;"><span class="tadv-color"
+        style="color: #ffffff;">Daily Schedule at a Glance</span></h3>
+<figure class="wp-block-table is-style-stripes">
+    <table>
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td><strong>Start time</strong></td>
+                <td><strong>End time</strong></td>
+                <td><strong>Duration</strong></td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>7:00 AM</td>
+                <td>8:00 AM</td>
+                <td>60 min</td>
+            </tr>
+            <tr>
+                <td><strong>Session 1</strong></td>
+                <td>8:00 AM</td>
+                <td>9:30 AM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>9:30 AM</td>
+                <td>10:00 AM</td>
+                <td>30min</td>
+            </tr>
+            <tr>
+                <td><strong>Session 2</strong></td>
+                <td>10:00 AM</td>
+                <td>11:30 AM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>11:30 AM</td>
+                <td>1:00 PM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td><strong>Session 3</strong></td>
+                <td>1:00 PM</td>
+                <td>2:30 PM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>2:30 PM</td>
+                <td>3:00 PM</td>
+                <td>30 min</td>
+            </tr>
+            <tr>
+                <td><strong>Session 4</strong></td>
+                <td>3:00 PM</td>
+                <td>4:30 PM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td>Break</td>
+                <td>4:30 PM</td>
+                <td>5: 00 PM</td>
+                <td>30 min</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>5:00 PM</td>
+                <td>6:30 PM</td>
+                <td>90 min</td>
+            </tr>
+            <tr>
+                <td><strong>Session 5</strong></td>
+                <td>7:00 PM</td>
+                <td>8:30 PM</td>
+                <td>90 min</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>

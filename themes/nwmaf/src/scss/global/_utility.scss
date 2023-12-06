@@ -1,0 +1,188 @@
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+}
+
+.d-flex { display: flex; }
+
+.d-flex--inline { display: inline-flex; }
+
+.padding-5 {
+    padding: 1rem !important;
+
+    @media screen and (min-width: $bp-small ) { padding: 3rem !important; }
+}
+
+// alignment
+.text-left { text-align: left !important; }
+
+.text-center { text-align: center; }
+
+// text styles
+.text-bold { font-weight: bolder; }
+
+.text-small { font-size: 14px; }
+
+.text-size-base { font-size: $base-font-size; }
+
+.col-heading {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
+.has-white-color,
+.text-white { color: color(default, light) !important; }
+
+.text-white > a:hover,
+a.text-white:hover { color: color(default, dark); }
+
+// background colors
+.bg-grey--lighter { background-color: color(neutral, lighter); }
+
+.bg-grey--light { background-color: color(neutral, light); }
+
+.bg-grey--darker { background-color: color(neutral, darker); }
+
+.bg-orange { background-color: color(orange, base); }
+
+.bg-orange--lighter { background-color: color(orange, light); }
+
+.bg-blue { background-color: color(blue, base); }
+
+.bg-blue--lighter { background-color: color(blue, lighter); }
+
+.bg-green { background-color: color(green, base); }
+
+.bg-green--light { background-color: color(green, light); }
+
+.bg-green--lighter { background-color: color(green, lighter); }
+
+.bg-red--alert { background-color: color(primary, base); }
+
+.bg-gold { background-color: color(gold, base); }
+
+.bg-gold--light { background-color: color(gold, light); }
+
+.btn--orange--light { background-color: color(orange, light); }
+
+.btn--blue--light { background-color: color(blue, lighter); }
+
+// box-shadow
+.box-shadow--blue { box-shadow: $box-shadow-offset-4-blue; }
+
+.box-shadow--orange { box-shadow: $box-shadow-offset-18-orange; }
+
+
+// inline link styles
+
+.link--gold {
+    @include inline-link-hover($color: color(gold, base),
+        $offset-start: 15%,
+        $offset-hover: 100%,
+        $offset-active: 130%,
+        $opacity: 1,
+        $from: 'bottom'
+    );
+
+    padding: 0 1px;
+    font-weight: normal;
+    transition: $transition !important;
+
+    &:hover { text-decoration: none; }
+
+    &.text-white:hover { color: color(default, dark) !important; }
+}
+
+.link--dark {
+    @include inline-link-hover($color: color(default, dark),
+        $offset-start: 15%,
+        $offset-hover: 100%,
+        $offset-active: 130%,
+        $opacity: 1,
+        $from: 'bottom'
+    );
+
+    padding: 0 5px;
+    font-weight: 500;
+    transition: $transition !important;
+
+    &:hover { color: color(default, light) !important; }
+}
+
+// responsive bootstrap overrides
+.p-5 {
+    padding: 1rem !important;
+
+    @media screen and (min-width: $bp-medium) { padding: 3rem !important; }
+}
+
+// checkmark list
+.list--checkmark {
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 15px !important;
+        font-style: italic;
+
+        &::before {
+            position: absolute;
+            top: 5px;
+            left: -13px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../images/svg/check-mark.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+        }
+    }
+}
+
+// col-chart
+.col-chart {
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
+}
+
+.has-border--top {
+
+    @media screen and (min-width: $bp-medium) {
+        border-top: 1px solid color(neutral, light);
+    }
+}
+
+.has-border--right {
+
+    @media screen and (min-width: $bp-medium) {
+        border-right: 1px solid color(neutral, light);
+    }
+}
+
+.has-border--bottom {
+
+    @media screen and (min-width: $bp-medium) {
+        border-bottom: 1px solid color(neutral, light);
+    }
+}
+
+.has-border--left {
+
+    @media screen and (min-width: $bp-medium) {
+        border-left: 1px solid color(neutral, light);
+    }
+}

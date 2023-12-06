@@ -1,0 +1,90 @@
+// Callouts
+
+// Featured spotlight callout-- Uses Media Text Block in Block Editor
+
+.wp-block-media-text {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 600px) {
+        display: inline-flex;
+        flex-flow: row nowrap;
+    }
+
+    &.featured--spotlight {
+        background-color: color(blue, base);
+    }
+
+    &.featured--member {}
+
+    &.featured--guest {
+        background-color: color(green, dark);
+    }
+
+    .wp-block-media-text__media {
+
+        @media screen and (min-width: 601px) {
+            align-self: flex-start;
+            min-width: 50%;
+        }
+
+        img {}
+    }
+
+    .wp-block-media-text__content {
+        padding: 1.5rem 1rem;
+        color: color(default, light);
+
+        p,
+        .spotlight--text,
+        .spotlight--title,
+        .spotlight--name {
+            color: color(default, light);
+        }
+
+        .spotlight--name {
+            font-size: 1.5rem;
+
+            @media screen and (min-width: $bp-medium) {
+                font-size: 2rem;
+            }
+        }
+
+        .spotlight--title {
+            text-transform: uppercase;
+        }
+
+        .spotlight--text {}
+
+        a {
+            @include inline-link-hover($color: color(gold, base),
+                $offset-start: 15%,
+                $offset-hover: 100%,
+                $offset-active: 130%,
+                $opacity: 1,
+                $from: 'bottom'
+            );
+            padding: 0 1px;
+            font-weight: normal;
+            transition: $transition !important;
+            color: color(default, light);
+
+            &:hover {
+                text-decoration: none;
+                color: color(default, dark) !important;
+            }
+
+            &.text-white:hover {
+                color: color(default, light) !important;
+            }
+        }
+    }
+
+
+
+}
+
+
+// Join NWMAF

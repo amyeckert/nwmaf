@@ -1,0 +1,53 @@
+// Search + filter PRO
+
+// Annual Conference schedule
+
+// sear and filter form items
+.searchandfilter {
+    .sf-level-0 {
+        display: flex;
+        flex-direction: column nowrap;
+    }
+}
+
+// #search-schedule {
+.search-filter-results {
+
+    div:not(.pagination):not(.more-link-wrapper) {
+        background-color: color(gold, base);
+        padding: 1rem;
+    }
+
+    p:empty,
+    p br { display: none; }
+
+    a.more-link { margin: 0; }
+
+    p.exerpt-date-time {
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+
+    div.pagination {
+
+        .nav-previous,
+        .nav-next {
+            background-color: color(default, light);
+
+        }
+
+        &:first-of-type { display: none; }
+    }
+
+    h2 {
+        font-family: $base-font;
+        font-size: 1rem;
+        font-weight: 600;
+
+
+        @media (min-width: 768px) {
+            font-size: 1.5rem !important;
+        }
+    }
+}
+// }

@@ -1,0 +1,178 @@
+//sass-lint:disable no-important
+
+// image with caption base
+.soliloquy-container {
+
+    .soliloquy-viewport {
+        overflow: visible !important;
+    }
+
+    .soliloquy-wrapper {
+
+        .soliloquy-next,
+        .soliloquy-prev {
+            top: 50%;
+            width: 44px;
+            height: 44px;
+            background-image: url('../../images/svg/arrow-right-trans.svg') !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: 24px 24px !important;
+        }
+
+        .soliloquy-prev {
+            transform: rotate(180deg);
+        }
+
+        .soliloquy-pager {
+
+            .soliloquy-pager-item {
+
+                .soliloquy-pager-link {
+                    background-image: url('../../images/svg/circle-outline-grey--dark.svg') !important;
+
+                    &.active,
+                    &:hover {
+                        background-image: url('../../images/svg/circle-filled-grey--dark.svg') !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// override has to be written this way:
+.soliloquy-container .soliloquy-caption .soliloquy-caption-inside {
+    background: rgba(0, 0, 0, .7) !important;
+}
+
+
+// custom testimonial
+
+.slider {
+
+    // arrows
+    .soliloquy-next,
+    .soliloquy-prev {
+        top: 88% !important;
+        width: 50px;
+        height: 50px;
+        background: transparent !important;
+        background-image: url('../../images/svg/arrow-right-trans.svg') !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+    }
+
+    .soliloquy-prev {
+        top: 87% !important;
+        transform: rotate(180deg);
+    }
+
+    .soliloquy-pager {
+        display: none !important;
+
+        @media screen and (min-width: $bp-small) {
+            bottom: 19px;
+            display: block !important;
+        }
+    }
+
+    .soliloquy-pager-link {
+        background-image: url('../../images/svg/circle-outline-grey--dark.svg') !important;
+        background-size: contain;
+
+        &.active,
+        &:hover {
+            background-image: url('../../images/svg/circle-filled-grey--dark.svg') !important;
+
+        }
+    }
+
+    &.slider--testimonial {
+
+        .soliloquy-wrapper {
+            display: block !important;
+            margin: 2rem 0;
+            min-height: 350px !important;
+            background-color: color(neutral, lighter) !important;
+
+            .soliloquy-html-content {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                padding: 2rem 1rem;
+                color: color(neutral, dark);
+
+                @media screen and (min-width: $bp-xsmall) {
+                    padding: 2rem;
+                }
+
+                @media (min-width: $bp-small) {
+                    background-image: url('../../images/svg/NWMAFLogo-inner-grey--light.svg') !important;
+                    background-repeat: no-repeat;
+                    background-position: 9% 40%;
+                    background-size: 100px 100px;
+                }
+
+                .soliloquy-item {
+                    top: calc(50% - 100px);
+                }
+
+                blockquote {
+                    position: relative;
+                    line-height: 1.3 !important;
+
+                    @media (min-width: $bp-small) {
+                        margin-left: auto;
+                        width: 70%;
+                    }
+
+                    p {
+                        position: relative;
+                        display: inline-block;
+
+                        &::before {
+                            position: absolute;
+                            top: 0;
+                            left: -25px;
+                            display: block;
+                            width: 20px;
+                            height: 14px;
+                            background-image: url('../../images/svg/quote--grey.svg');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            transform: scaleX(-1);
+                            content: '';
+                        }
+                    }
+
+                    .close-quote {
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            top: 0;
+                            right: -24px;
+                            display: block;
+                            height: 14px;
+                            width: 20px;
+                            background-image: url('../../images/svg/quote--grey.svg');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            content: '';
+                        }
+                    }
+                }
+
+                cite {
+                    position: relative;
+                    display: block;
+                    padding-top: 1rem !important;
+                    text-align: left;
+
+                }
+            }
+        }
+    }
+}

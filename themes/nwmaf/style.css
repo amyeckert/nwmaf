@@ -1,0 +1,18 @@
+/*
+Theme Name: NWMAF
+Theme URI: https://wordpress.org/themes/period/
+description:
+  A child theme of the Period theme.
+Author: Amy Eckert
+Author URI: http://amyeckertprojects.com
+Template: period
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: period-nwmaf
+*/
+
+/* import compiled custom scss */
+@import 'dist/css/styles.min.css';
+

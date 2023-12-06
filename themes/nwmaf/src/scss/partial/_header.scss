@@ -1,0 +1,119 @@
+.site-header {
+    padding: 24px 0;
+    background: color(neutral, lighter);
+    font-family: $brand-font;
+
+    @media screen and (min-width: $bp-medium) {
+        padding: 0;
+        background: color(neutral, light);
+    }
+
+    .max-width {
+        position: relative;
+        padding: 0;
+
+        @media screen and (min-width: $bp-medium) {
+            display: flex;
+            flex-flow: column nowrap;
+            height: 315px;
+        }
+
+        @media screen and (min-width: $bp-large) {
+            height: 345px;
+        }
+    }
+
+    .toggle-navigation {
+        margin-top: 0;
+    }
+
+    .mobile-menu-toggle {
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+
+
+    .title-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+
+        @media (min-width: $bp-xsmall) {
+            // justify-content: space-between;
+            float: none;
+            padding: 0 24px;
+        }
+
+        @media (min-width: 768px) {
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+
+        }
+
+        @media (min-width: $bp-medium) {
+            z-index: 1;
+            justify-content: space-between;
+            margin: 0;
+            padding-left: 5.5556%;
+            padding-right: 5.5556%;
+        }
+
+        .site-title {
+            margin: 0 0 .5rem;
+
+            @media (min-width: 768px) {
+                margin: 0 8px 12px 0;
+            }
+
+            @media (min-width: 992px) {
+                margin: 0;
+            }
+
+            a {
+                display: block;
+                height: 100%;
+            }
+
+            .logo {
+                width: 100px;
+
+                @media (min-width: 992px) {
+                    width: 125px;
+                }
+
+                @media (min-width: 1013px) {
+                    width: 130px;
+                }
+
+                @media (min-width: 1200px) {
+                    width: 180px;
+                }
+            }
+        }
+
+        .tagline {
+            align-self: center;
+            margin-left: 0;
+            margin-bottom: 1rem;
+            font-family: $brand-font;
+            line-height: 1.2;
+            font-size: 2rem;
+            font-weight: 900;
+            color: color(default, dark);
+
+            @media (min-width: 768px) {
+                font-size: 2.5rem;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 3.1rem;
+            }
+
+            @media (min-width: $bp-medium) {
+                font-size: 3.5rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+
+// 404 page
+//sass-lint:disable no-url-domains
+//sass-lint:disable no-url-protocols
+.error-msg {
+    padding: 1rem;
+
+    @media screen and (min-width: $bp-small) { padding: 2rem; }
+
+    .error--header {
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    .error-msg--container {
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: $bp-small) { margin-bottom: 2rem; }
+    }
+
+    h1.error-msg--title {
+        position: relative;
+        display: block;
+        width: fit-content;
+        padding-left: 50px;
+        font-size: 2rem;
+
+        @media screen and (min-width: $bp-small) {
+            font-size: 3rem;
+            padding-left: 80px;
+        }
+
+        @media screen and (min-width: $bp-medium) {
+            font-size: 2.5rem;
+            padding-left: 50px;
+        }
+
+        @media screen and (min-width: $bp-large) {
+            font-size: 3rem;
+            padding-left: 80px;
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 40px;
+            width: 40px;
+            display: block;
+            background-image: url('https://nwmaf.org/wp-content/uploads/2023/06/oops.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: '';
+
+            @media screen and (min-width: $bp-small) {
+                top: -9px;
+                height: 60px;
+                width: 60px;
+            }
+
+            @media screen and (min-width: $bp-medium) {
+                top: -6px;
+                height: 40px;
+                width: 40px;
+            }
+
+            @media screen and (min-width: $bp-large) {
+                top: -9px;
+                height: 60px;
+                width: 60px;
+            }
+
+        }
+    }
+
+    .error-msg--msg {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .search-form-container {
+        width: 75%;
+        margin: 0 auto;
+
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            width: 100%;
+
+            @media screen and (min-width: $bp-small) { justify-content: space-between; }
+
+            @media screen and (min-width: $bp-medium) { display: inline-block; }
+        }
+
+        .search-field {
+            max-width: unset;
+
+            @media screen and (min-width: $bp-medium) { max-width: 71%; }
+
+            @media screen and (min-width: $bp-large) { max-width: 75%; }
+        }
+
+        .search-submit {
+            margin-top: 1rem;
+            margin-left: auto;
+            max-width: 25%;
+        }
+    }
+}

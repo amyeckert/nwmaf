@@ -1,0 +1,191 @@
+// WP block overrides
+// .wp-block-columns { flex-wrap: wrap; }
+
+.wp-block-group {
+
+    &.bg-blue,
+    &.bg-red--alert {
+
+        h3,
+        p,
+        a { color: color(default, light); }
+
+        // p>a:hover,
+        // a:hover {
+        //     color: $text-color !important;
+        // }
+    }
+
+    ul { margin-bottom: 0; }
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+
+    .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:only-child) {
+        flex-basis: 100% !important;
+    }
+}
+
+@media (min-width: 782px) and (max-width: 991px) {
+
+    .wp-block-columns { flex-wrap: wrap !important; }
+}
+
+.wp-block-columns { margin-bottom: 0 !important; }
+
+// Board Member Bio Component
+.wp-block-group.board-member__group {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: color(neutral, lighter);
+
+    @media screen and (min-width: $bp-small) {
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    .wp-block-columns { margin-bottom: 0; }
+
+    .wp-block-image { margin: 0; }
+
+    .wp-block-pb-accordion-item .c-accordion__title {
+        border-bottom: 1px solid color(neutral, dark);
+        padding-left: 0;
+    }
+
+    .c-accordion__content {}
+}
+
+// neutral base with orange box shadow block
+.wp-block-group.bg-grey--light .wp-block-columns,
+.wp-block-group.bg-grey--light {
+    margin: 0 1rem 1rem 0;
+    background-color: color(neutral, lighter) !important;
+
+    a {
+        @include inline-link-hover($color: color(gold, base),
+            $offset-start: 4%,
+            $offset-hover: 15%,
+            $offset-active: 15%,
+            $opacity: 1,
+            $from: 'bottom'
+        );
+        padding: 0 5px;
+        font-weight: 500;
+        transition: $transition !important;
+
+        &:hover { color: color(default, dark) !important; }
+    }
+}
+
+.wp-block-group.box-shadow--orange { box-shadow: $box-shadow-offset-18-orange; }
+
+.wp-block-group.bg-blue .wp-block-columns,
+.wp-block-group.bg-blue,
+.wp-block-group.bg-grey--darker .wp-block-columns,
+.wp-block-group.bg-grey--darker {
+
+    h2,
+    h3,
+    p,
+    a { color: color(default, light) !important; }
+
+    p a,
+    a {
+
+        @include inline-link-hover($color: color(gold, base),
+            $offset-start: 4%,
+            $offset-hover: 15%,
+            $offset-active: 15%,
+            $opacity: 1,
+            $from: 'bottom'
+        );
+        padding: 0;
+        font-weight: normal;
+        transition: $transition !important;
+
+        &:hover,
+        &:active {
+            color: color(default, light) !important;
+        }
+    }
+}
+
+.wp-block-separator {
+    color: color(blue, dark);
+}
+
+// image rows/grid 3 columns,
+.image-row {
+    display: flex;
+    flex-flow: row wrap;
+
+    @media screen and (min-width: $bp-xsmall) {
+        justify-content: space-evenly;
+    }
+
+    @media screen and (min-width: $bp-small) {
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: $bp-medium) {
+        justify-content: space-evenly;
+    }
+
+    @media screen and (min-width: $bp-large) {
+        justify-content: flex-start;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .image-row__container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1%;
+        width: 100%;
+        min-height: 250px;
+
+        @media screen and (min-width: $bp-xsmall) {
+            max-width: 45%;
+        }
+
+        @media screen and (min-width: $bp-small) {
+            max-width: 33%;
+        }
+
+        @media screen and (min-width: $bp-medium) {
+            max-width: 45%;
+        }
+
+        @media screen and (min-width: $bp-large) {
+            max-width: 33%;
+        }
+    }
+
+    a.image-row__inner {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        background-color: color(neutral, lighter);
+        background-image: none !important;
+
+        &:hover {
+            box-shadow: $box-shadow-offset-4-ltblue;
+        }
+    }
+
+    img {
+        margin-bottom: 1rem;
+        width: auto;
+        max-height: 175px;
+    }
+
+}

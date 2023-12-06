@@ -1,0 +1,136 @@
+//sass-lint:disable leading-zero
+
+/*
+ * font declarations
+ *
+ ************************************************************/
+$brand-font: 'Hind', sans-serif;
+$base-font: 'Hind', Geneva, Tahoma sans-serif;
+
+$base-font-size: 18px;
+$base-line-height: 1.35;
+$base-vertical-margin: 32px;
+
+$base-padding: 1rem;
+
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 1rem;
+
+// ------- BREAKPOINTS -------//
+// min-widths:
+$bp-xsmall: 480px;
+$bp-small: 768px;
+$bp-992: 992px;
+$bp-medium: 1013px;
+$bp-large: 1200px;
+$bp-xlarge: 1500px;
+
+/*
+ * defined color map
+ *
+ ************************************************************/
+
+$colors: (
+    primary: (
+        base: #c8102e // brand red
+    ),
+    purple: (
+        light: #ddc8e7,
+        base: #6d0073,
+        dark: #490e61,
+    ),
+    neutral: (
+        lightest: #f4f4f4,
+        lighter: #f7f3ee,
+        light: #dbd7cc,
+        base: #6f7069,
+        darker: #47473f,
+        dark: #2f2f2f,
+    ),
+    error: (
+        base: #7a0a1d,
+    ),
+    default: (
+        dark: #1c1c1a,
+        light: #fff,
+    ),
+    gold: (
+        light: #f5ca5a,
+        base: #f2b705,
+        dark: #8b7309,
+    ),
+    green: (
+        lighter: #ecfbe9,
+        light: #bae78e,
+        base: #45731f,
+        dark: #334700,
+    ),
+    blue: (
+        lightest: #e9fbfe,
+        lighter: #6de4e9,
+        light: #71e5ff,
+        base: #025e73,
+        dark: #024959,
+    ),
+    tomato: (
+        base: #db3a00
+    ),
+    orange: (
+        lighter: #fff2ea,
+        light: #faca9a,
+        base: #fa5f2d,
+        dark: #ac2e01
+    ),
+    brown: (
+        base: #8c520b,
+        dark: #593407
+    )
+);
+
+/*
+ * color assignments
+ *
+ ****************************************/
+
+$site-background-color: color(default, light);
+$text-color: color(default, dark);
+$white: color(default, light);
+
+$border-color: color(neutral, lighter);
+
+/*
+ * defined z-indices map
+ *
+ ************************************************************/
+
+$z-indexes: (
+    pit: -9999,
+    basement: 0,
+    default: 1,
+    breakout: 10,
+    menus: 100,
+    dropdown: 2000,
+    overlay: 3000,
+    modal: 4000,
+);
+
+// ------- BOX SHADOW -------//
+
+$box-shadow-default: 2px 3px 5px 0 rgba(28, 28, 26, .68);
+$box-shadow-light: 2px 3px 5px 0 rgba(28, 28, 26, .25);
+$box-shadow-offset-4-base: 4px 4px 0 0 color(neutral, darker);
+$box-shadow-offset-4-ghost: 4px 4px 0 0 color(default, light);
+
+$box-shadow-offset-4-blue: 4px 4px 0 0 color(blue, dark);
+$box-shadow-offset-4-green: 4px 4px 0 0 color(green, dark);
+$box-shadow-offset-4-ltblue: 4px 4px 0 0 color(blue, light);
+$box-shadow-offset-4-orange: 4px 4px 0 0 color(orange, dark);
+$box-shadow-offset-18-orange: 18px 18px 0 0 color(orange, dark);
+$box-shadow-transparent: 4px 4px 0 0 transparent;
+
+
+// ------- TRANSITIONS -------//
+$transition: all .3s ease-in-out;
+$transition-easing: cubic-bezier(.475, .425, 0, .995);
+$transition-duration: .25s;

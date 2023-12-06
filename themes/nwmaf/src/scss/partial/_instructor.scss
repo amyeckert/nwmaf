@@ -1,0 +1,88 @@
+// /* right margin on instructor image in post content */
+// .tribe-events-pro-organizer__meta-content.tribe-common-g-col.tribe-common-b1 p img {
+//     margin: 0 1rem 0 0;
+// }
+
+// .tribe-events-pro-organizer__meta-content.tribe-common-g-col.tribe-common-b1 img {
+//     margin: 0 1rem 0 0;
+// }
+
+.instructor-image {
+    display: block;
+    min-height: 75px;
+}
+
+// list page via shortcode
+ul.tribe-venues-organizers-shortcode {
+    padding: 0;
+
+    li.tribe_organizer {
+        position: relative;
+        margin: 0 0 1rem;
+        box-shadow: $box-shadow-transparent;
+        padding: 0;
+        background-color: color(neutral, lighter);
+        text-align: left;
+        transition: $transition;
+
+        &::after {
+            position: absolute;
+            top: calc(50% - 22px);
+            right: 10px;
+            width: 44px;
+            height: 44px;
+            background-image: url('../../images/svg/arrow-right-trans.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: $transition;
+            content: '';
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: $box-shadow-offset-4-ltblue;
+
+            &::after {
+                right: 0;
+            }
+
+            a {
+                color: $text-color;
+            }
+
+        }
+
+        .tribe-venues-organizers-image {
+            order: 1;
+            float: none;
+            margin: 0 auto;
+            width: auto;
+            max-width: unset;
+            height: 100%;
+            max-height: unset;
+
+            img {
+                width: auto;
+                min-height: 100%;
+            }
+        }
+
+        .tribe-venues-organizers-info {
+            position: relative;
+            order: 2;
+
+            a {
+                display: block;
+                padding: 1rem !important;
+                color: $text-color;
+                background-image: none !important;
+
+                &:hover {
+                    text-decoration: none !important;
+                    color: $text-color !important;
+                }
+            }
+        }
+    }
+}

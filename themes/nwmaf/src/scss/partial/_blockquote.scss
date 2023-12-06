@@ -1,0 +1,15 @@
+blockquote,
+.wp-block-quote {
+
+    // base
+    border-left: solid 3px color(default, dark);
+
+    p { color: $text-color; }
+
+
+    &.text-white {
+        border-left: solid 3px color(default, light);
+
+        p { color: color(default, light); }
+    }
+}

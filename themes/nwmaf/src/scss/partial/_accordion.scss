@@ -1,0 +1,107 @@
+// accordion blocks
+.wp-block-pb-accordion-item {
+    margin-bottom: 1rem;
+
+    &.bg-gold {
+        background-color: color(default, light);
+
+        .c-accordion__title {
+            background-color: color(gold, base);
+        }
+
+        .c-accordion__content {
+            background-color: color(neutral, lighter);
+        }
+    }
+
+    h2.c-accordion__title,
+    .c-accordion__title {
+        position: relative;
+        margin-bottom: 0;
+        padding: .7rem;
+        font-size: 1rem;
+        font-weight: 600;
+
+        @media (min-width: 992px) {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        // toggle icon
+        &::after {
+            right: .7rem;
+            font-size: 2rem;
+            color: color(default, dark);
+        }
+    }
+
+    .c-accordion__content {
+        margin-top: 0;
+        margin-bottom: .5rem;
+        padding: .7rem;
+
+        .volunteer__details {
+
+            ul {
+                margin: 0 0 1rem;
+            }
+        }
+    }
+
+    &.is-urgent h2::before {
+        position: absolute;
+        top: 14px;
+        right: 1rem;
+        margin-right: .5rem;
+        width: 14px;
+        height: 14px;
+        background-image: url('../../images/svg/icon-urgent.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+
+        @media (min-width: 992px) {
+            width: 33px;
+            height: 22px;
+
+        }
+    }
+
+}
+
+
+// .accordion--orange,
+// .priority--urgent {
+
+//     .c-accordion__title {
+//         background-color: color(orange, light);
+//     }
+
+//     .c-accordion__content {
+//         background-color: color(orange, lighter);
+//     }
+// }
+
+// .accordion--blue,
+// .priority--arrival {
+
+//     .c-accordion__title {
+//         background-color: color(blue, lighter);
+//     }
+
+//     .c-accordion__content {
+//         background-color: color(blue, lightest);
+//     }
+// }
+
+// .accordion--green,
+// .priority--anytime {
+
+//     .c-accordion__title {
+//         background-color: color(green, light);
+//     }
+
+//     .c-accordion__content {
+//         background-color: color(green, lighter);
+//     }
+// }
