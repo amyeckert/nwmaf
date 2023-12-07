@@ -12,7 +12,7 @@ jobs:
       uses: wpengine/github-action-wpe-site-deploy@v3
       with:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-        WPE_ENV: nwmafstaging
+        WPE_ENV: "nwmafstaging"
         # Deploy Options
         REMOTE_PATH: "wp-content/"
         PHP_LINT: TRUE
