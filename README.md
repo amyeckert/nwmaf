@@ -1,4 +1,4 @@
-# nwmaf-theme
+# nwmaf-theme is a child theme of Period Pro, which is a plugin to be kept up-to-date.
 <!DOCTYPE html>
 <html lang="en">
 <head>
