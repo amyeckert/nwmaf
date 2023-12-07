@@ -16,3 +16,4 @@ jobs:
         # Deploy Options
         PHP_LINT: TRUE
         CACHE_CLEAR: TRUE
+        REMOTE_PATH: "wp-content/"
