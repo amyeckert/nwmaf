@@ -1,4 +1,4 @@
-# nwmaf-theme is a child theme of Period Pro, which is a plugin to be kept up-to-date.
+<h1>nwmaf</h1><p>is a child theme of Period Pro, which is a plugin to be kept up-to-date.</p> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
 </head>
 <body>
-<h1 id="logo">
+<h2 id="logo">
 	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
-</h1>
+</h2>
 <p style="text-align: center">Semantic Personal Publishing Platform</p>
 
 <h2>First Things First</h2>
