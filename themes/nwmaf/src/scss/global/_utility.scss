@@ -82,7 +82,6 @@ a.text-white:hover { color: color(default, dark); }
 
 
 // inline link styles
-
 .link--gold {
     @include inline-link-hover($color: color(gold, base),
         $offset-start: 15%,
@@ -115,13 +114,6 @@ a.text-white:hover { color: color(default, dark); }
     transition: $transition !important;
 
     &:hover { color: color(default, light) !important; }
-}
-
-// responsive bootstrap overrides
-.p-5 {
-    padding: 1rem !important;
-
-    @media screen and (min-width: $bp-medium) { padding: 3rem !important; }
 }
 
 // checkmark list

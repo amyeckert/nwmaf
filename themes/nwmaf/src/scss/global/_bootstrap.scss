@@ -1,2 +1,7 @@
 // any custom overrides...
 
+.p-5 {
+    padding: 1rem !important;
+
+    @media screen and (min-width: $bp-medium) { padding: 3rem !important; }
+}
