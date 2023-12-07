@@ -14,6 +14,6 @@ jobs:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
         WPE_ENV: nwmafstaging
         # Deploy Options
+        REMOTE_PATH: "wp-content/"
         PHP_LINT: TRUE
         CACHE_CLEAR: TRUE
-        REMOTE_PATH: "wp-content/"
