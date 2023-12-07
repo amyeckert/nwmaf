@@ -1,4 +1,4 @@
-<h1>nwmaf</h1><p>is a child theme of Period Pro, which is a plugin to be kept up-to-date.</p> 
+<h1>nwmaf</h1><p>is a child theme of <a href="https://www.competethemes.com/period-pro/" target="_blank">Period Pro</a>.</p> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
