@@ -429,7 +429,6 @@ ul.products {
 }
 
 // checkout page
-
 .checkout.woocommerce-checkout {
 
     .col-1,
@@ -486,6 +485,121 @@ ul.products {
         display: inline-flex;
         font-size: $base-font-size * 1.3;
         color: color(primary, base);
+    }
+}
+
+// woocommerce buttons
+.woocommerce-page,
+.woocommerce {
+
+    #respond {
+
+        input#submit.alt:disabled[disabled],
+        input#submit.alt:disabled,
+        input#submit.alt.disabled {
+            box-shadow: none;
+            background-color: darken(color(neutral, light), 20%);
+            color: color(neutral, dark);
+
+            // &:hover {}
+        }
+
+    }
+
+    a.button.alt:disabled[disabled],
+    a.button.alt:disabled,
+    a.button.alt.disabled {
+        box-shadow: none;
+        background-color: darken(color(neutral, light), 20%);
+        color: color(neutral, dark);
+    }
+
+    button.button.alt:disabled[disabled],
+    button.button.alt:disabled,
+    button.button.alt.disabled {
+        box-shadow: none;
+        background-color: darken(color(neutral, light), 20%);
+        color: color(neutral, dark) !important;
+
+        &:hover {
+            background-color: color(neutral, lightest) !important;
+            color: color(neutral, dark) !important;
+        }
+    }
+
+    button.button:disabled[disabled],
+    input.button.alt:disabled[disabled],
+    input.button.alt:disabled,
+    input.button.alt.disabled {
+        box-shadow: none;
+        background-color: darken(color(neutral, light), 20%);
+        color: color(neutral, dark);
+
+        &:hover {
+            color: color(neutral, dark) !important;
+        }
+    }
+
+    li.product .button,
+    button.button.alt,
+    button.button,
+    input.button {
+        border-radius: 0 !important;
+        border: 1px solid color(neutral, light) !important;
+        background-color: color(neutral, lighter) !important;
+        color: color(neutral, dark) !important;
+        transition: $transition;
+
+        &:hover,
+        &:active {
+            background-color: color(neutral, dark) !important;
+            color: color(default, light) !important;
+        }
+
+        &:focus {
+            outline: auto;
+        }
+
+        &:disabled[disabled] {
+
+            &:hover {
+                background-color: color(neutral, lightest) !important;
+            }
+        }
+    }
+
+    a.button.product_type_variable,
+    a.button.add_to_cart_button {
+        padding: 1rem;
+        border: 0 !important;
+        background-image: none;
+        background-color: color(neutral, lighter) !important;
+    }
+
+    .wc-proceed-to-checkout {
+
+        a.checkout-button {
+            margin: 0 auto;
+            max-width: fit-content;
+            padding: 1rem;
+            border-radius: 0;
+            background-image: none;
+            background-color: color(primary, base) !important;
+            color: color(default, light) !important;
+            font-family: $base-font;
+
+            @media screen and (min-width: $bp-xsmall) {
+                margin: unset;
+                margin-left: auto;
+            }
+
+            &:hover {
+                background: none;
+                box-shadow: $box-shadow-offset-4-blue;
+                background-color: color(primary, base);
+                color: color(default, light);
+            }
+        }
     }
 }
 

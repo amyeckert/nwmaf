@@ -263,9 +263,11 @@
                 padding-left: 0;
 
                 .instructor {
+                    list-style: none;
                     margin-left: 0;
+                    margin-bottom: 0;
 
-                    a {font-weight: normal;}
+                    a { font-weight: normal;}
                 }
             }
         }

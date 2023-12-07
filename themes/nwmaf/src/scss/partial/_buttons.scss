@@ -1,5 +1,5 @@
-//sass-lint:disable no-ids
-//sass-lint:disable no-important
+// sass-lint:disable no-ids
+// sass-lint:disable no-important
 // sass-lint:disable-all
 
 // base button
@@ -92,7 +92,6 @@ a.btn,
             height: 22px;
         }
     }
-
 }
 
 .btn--group {
@@ -101,13 +100,9 @@ a.btn,
     margin-left: 0;
     list-style: none;
 
-    @media (min-width: 768px) {
-        flex-flow: row wrap;
-    }
+    @media (min-width: 768px) { flex-flow: row wrap; }
 
-    .btn {
-        padding: .375rem .75rem;
-    }
+    .btn { padding: .375rem .75rem; }
 
     .btn--icon {
         padding: .375rem .75rem;
@@ -126,9 +121,7 @@ a.btn,
     text-align: center;
     transition: $transition;
 
-    &:hover {
-        background-color: color(blue, dark);
-    }
+    &:hover { background-color: color(blue, dark); }
 
     .btn-reg {
         text-decoration: none;
@@ -138,6 +131,7 @@ a.btn,
 }
 
 .post-content form .af-fields .af-submit {
+
     .acf-button.af-submit-button {
         border-radius: 4px;
         border: 0;
@@ -156,50 +150,50 @@ a.btn,
 }
 
 // Event Tickets
-.event-tickets {
+// .event-tickets {
 
-    // get tickets button
-    .tribe-tickets__tickets-footer {
+//     // get tickets button
+//     .tribe-tickets__tickets-footer {
 
-        .tribe-tickets__tickets-buy.tribe-common-c-btn:disabled,
-        .tribe-tickets__tickets-buy.tribe-common-c-btn:disabled:hover {
-            box-shadow: none;
-            background-color: darken(color(neutral, light), 20%);
-            pointer-events: none;
-            color: #fff;
-        }
+//         .tribe-tickets__tickets-buy.tribe-common-c-btn:disabled,
+//         .tribe-tickets__tickets-buy.tribe-common-c-btn:disabled:hover {
+//             box-shadow: none;
+//             background-color: darken(color(neutral, light), 20%);
+//             pointer-events: none;
+//             color: #fff;
+//         }
 
-        .tribe-common-c-btn.tribe-tickets__tickets-buy {
-            border-radius: 0;
-            background-color: color(primary, base);
-            font-family: $base-font;
+//         .tribe-common-c-btn.tribe-tickets__tickets-buy {
+//             border-radius: 0;
+//             background-color: color(primary, base);
+//             font-family: $base-font;
 
-            &:hover {
-                box-shadow: $box-shadow-offset-4-blue;
-                background-color: color(primary, base);
-                cursor: pointer;
-            }
-        }
-    }
+//             &:hover {
+//                 box-shadow: $box-shadow-offset-4-blue;
+//                 background-color: color(primary, base);
+//                 cursor: pointer;
+//             }
+//         }
+//     }
 
-    // save and checkout button
-    .tribe-common-c-btn.tribe-common-c-btn--small.tribe-tickets__registration-submit {
-        border-radius: 0;
-        border: 0;
-        padding: 11px 14px;
-        background-color: color(primary, base);
-        font-family: $base-font;
-        font-size: 1rem;
-        color: color(default, light);
-        transition: $transition;
+//     // save and checkout button
+//     .tribe-common-c-btn.tribe-common-c-btn--small.tribe-tickets__registration-submit {
+//         border-radius: 0;
+//         border: 0;
+//         padding: 11px 14px;
+//         background-color: color(primary, base);
+//         font-family: $base-font;
+//         font-size: 1rem;
+//         color: color(default, light);
+//         transition: $transition;
 
-        &:hover {
-            box-shadow: $box-shadow-offset-4-blue;
-            background-color: color(primary, base);
-            cursor: pointer;
-        }
-    }
-}
+//         &:hover {
+//             box-shadow: $box-shadow-offset-4-blue;
+//             background-color: color(primary, base);
+//             cursor: pointer;
+//         }
+//     }
+// }
 
 // .tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button.tribe-events-c-subscribe-dropdown__button--active
 
@@ -223,116 +217,116 @@ a.btn,
 }
 
 // woocommerce buttons
-.woocommerce-page,
-.woocommerce {
+// .woocommerce-page,
+// .woocommerce {
 
-    #respond {
+//     #respond {
 
-        input#submit.alt:disabled[disabled],
-        input#submit.alt:disabled,
-        input#submit.alt.disabled {
-            box-shadow: none;
-            background-color: darken(color(neutral, light), 20%);
-            color: color(neutral, dark);
+//         input#submit.alt:disabled[disabled],
+//         input#submit.alt:disabled,
+//         input#submit.alt.disabled {
+//             box-shadow: none;
+//             background-color: darken(color(neutral, light), 20%);
+//             color: color(neutral, dark);
 
-            // &:hover {}
-        }
+//             // &:hover {}
+//         }
 
-    }
+//     }
 
-    a.button.alt:disabled[disabled],
-    a.button.alt:disabled,
-    a.button.alt.disabled {
-        box-shadow: none;
-        background-color: darken(color(neutral, light), 20%);
-        color: color(neutral, dark);
-    }
+//     a.button.alt:disabled[disabled],
+//     a.button.alt:disabled,
+//     a.button.alt.disabled {
+//         box-shadow: none;
+//         background-color: darken(color(neutral, light), 20%);
+//         color: color(neutral, dark);
+//     }
 
-    button.button.alt:disabled[disabled],
-    button.button.alt:disabled,
-    button.button.alt.disabled {
-        box-shadow: none;
-        background-color: darken(color(neutral, light), 20%);
-        color: color(neutral, dark) !important;
+//     button.button.alt:disabled[disabled],
+//     button.button.alt:disabled,
+//     button.button.alt.disabled {
+//         box-shadow: none;
+//         background-color: darken(color(neutral, light), 20%);
+//         color: color(neutral, dark) !important;
 
-        &:hover {
-            background-color: color(neutral, lightest) !important;
-            color: color(neutral, dark) !important;
-        }
-    }
+//         &:hover {
+//             background-color: color(neutral, lightest) !important;
+//             color: color(neutral, dark) !important;
+//         }
+//     }
 
-    button.button:disabled[disabled],
-    input.button.alt:disabled[disabled],
-    input.button.alt:disabled,
-    input.button.alt.disabled {
-        box-shadow: none;
-        background-color: darken(color(neutral, light), 20%);
-        color: color(neutral, dark);
+//     button.button:disabled[disabled],
+//     input.button.alt:disabled[disabled],
+//     input.button.alt:disabled,
+//     input.button.alt.disabled {
+//         box-shadow: none;
+//         background-color: darken(color(neutral, light), 20%);
+//         color: color(neutral, dark);
 
-        &:hover {
-            color: color(neutral, dark) !important;
-        }
-    }
+//         &:hover {
+//             color: color(neutral, dark) !important;
+//         }
+//     }
 
-    li.product .button,
-    button.button.alt,
-    button.button,
-    input.button {
-        border-radius: 0 !important;
-        border: 1px solid color(neutral, light) !important;
-        background-color: color(neutral, lighter) !important;
-        color: color(neutral, dark) !important;
-        transition: $transition;
+//     li.product .button,
+//     button.button.alt,
+//     button.button,
+//     input.button {
+//         border-radius: 0 !important;
+//         border: 1px solid color(neutral, light) !important;
+//         background-color: color(neutral, lighter) !important;
+//         color: color(neutral, dark) !important;
+//         transition: $transition;
 
-        &:hover,
-        &:active {
-            background-color: color(neutral, dark) !important;
-            color: color(default, light) !important;
-        }
+//         &:hover,
+//         &:active {
+//             background-color: color(neutral, dark) !important;
+//             color: color(default, light) !important;
+//         }
 
-        &:focus {
-            outline: auto;
-        }
+//         &:focus {
+//             outline: auto;
+//         }
 
-        &:disabled[disabled] {
+//         &:disabled[disabled] {
 
-            &:hover {
-                background-color: color(neutral, lightest) !important;
-            }
-        }
-    }
+//             &:hover {
+//                 background-color: color(neutral, lightest) !important;
+//             }
+//         }
+//     }
 
-    a.button.product_type_variable,
-    a.button.add_to_cart_button {
-        padding: 1rem;
-        border: 0 !important;
-        background-image: none;
-        background-color: color(neutral, lighter) !important;
-    }
+//     a.button.product_type_variable,
+//     a.button.add_to_cart_button {
+//         padding: 1rem;
+//         border: 0 !important;
+//         background-image: none;
+//         background-color: color(neutral, lighter) !important;
+//     }
 
-    .wc-proceed-to-checkout {
+//     .wc-proceed-to-checkout {
 
-        a.checkout-button {
-            margin: 0 auto;
-            max-width: fit-content;
-            padding: 1rem;
-            border-radius: 0;
-            background-image: none;
-            background-color: color(primary, base) !important;
-            color: color(default, light) !important;
-            font-family: $base-font;
+//         a.checkout-button {
+//             margin: 0 auto;
+//             max-width: fit-content;
+//             padding: 1rem;
+//             border-radius: 0;
+//             background-image: none;
+//             background-color: color(primary, base) !important;
+//             color: color(default, light) !important;
+//             font-family: $base-font;
 
-            @media screen and (min-width: $bp-xsmall) {
-                margin: unset;
-                margin-left: auto;
-            }
+//             @media screen and (min-width: $bp-xsmall) {
+//                 margin: unset;
+//                 margin-left: auto;
+//             }
 
-            &:hover {
-                background: none;
-                box-shadow: $box-shadow-offset-4-blue;
-                background-color: color(primary, base);
-                color: color(default, light);
-            }
-        }
-    }
-}
+//             &:hover {
+//                 background: none;
+//                 box-shadow: $box-shadow-offset-4-blue;
+//                 background-color: color(primary, base);
+//                 color: color(default, light);
+//             }
+//         }
+//     }
+// }

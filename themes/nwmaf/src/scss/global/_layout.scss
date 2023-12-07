@@ -83,10 +83,11 @@ body {
     overflow-wrap: break-word;
 
     .more-link {
-        background-image: none;
         margin: $base-padding 0 0;
         border: 1px solid color(default, dark);
         padding: .5rem 1rem;
+        font-size: 1rem;
+        background-image: none;
     }
 }
 

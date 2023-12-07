@@ -20,7 +20,7 @@ const autoprefixer = require('autoprefixer'),
     uglify = require('gulp-uglify')
     ;
 const jsFunctionalitySource = 'scripts/source/functionality/*.js';
-const jsVendorBasePath = 'scripts/source/vendor';
+// const jsVendorBasePath = 'scripts/source/vendor';
 const jsDest = 'scripts';
 
 const watch = gulp.parallel(watchFiles);
