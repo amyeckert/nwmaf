@@ -138,8 +138,7 @@ if ( ! tribe_get_venue_id() ) {
 				<?php if ( $event_location ) : ?>
 				<dl class="class-location">
 					<dt>Location: </dt>
-					<!-- TO DO add link to location page. -->
-					<dd><?php echo $event_location ?><?php echo $website ?></dd>
+					<dd><?php echo $event_location ?></a></dd>
 				</dl>
 				<?php endif; ?>
 			</section>

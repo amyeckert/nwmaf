@@ -38,7 +38,7 @@ $event_classes = tribe_get_post_class( [ 'tribe-events-calendar-list__event', 't
 				<header class="tribe-events-calendar-list__event-header">
 					<?php $this->template( 'list/event/date', [ 'event' => $event ] ); ?>
 					<?php $this->template( 'list/event/title', [ 'event' => $event ] ); ?>
-					<div class="instructor mb-3 ml-2">
+					<div class="instructor mb-3">
 						<span class="tribe-events-calendar-day__event-venue-title"><strong>Instructor(s): </strong></span>
 						<?php
 							do_action( 'tribe_events_single_meta_organizer_section_start' );
@@ -60,7 +60,7 @@ $event_classes = tribe_get_post_class( [ 'tribe-events-calendar-list__event', 't
 							do_action( 'tribe_events_single_meta_organizer_section_end' );
 						?>
 					</div>
-                    <div class="tribe-events-calendar-day__event-venue-label ml-2">
+                    <div class="tribe-events-calendar-day__event-venue-label">
                         <span><strong>Location:&nbsp;</strong></span>
                         <?php $this->template( 'day/event/venue', [ 'event' => $event ] ); ?>
                     </div>

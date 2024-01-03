@@ -95,8 +95,11 @@
     }
 
     .tribe-events-c-view-selector__button {
+        height: 44px;
+        width: 44px;
 
         &:hover {
+            box-shadow: none;
 
             .change-view {
                 text-decoration: underline;

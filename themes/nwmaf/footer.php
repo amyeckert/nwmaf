@@ -10,7 +10,8 @@
         <div class="col-12 footer__top">
             <figure class="footer__logo">
                 <img src="https://nwmaf-conference.org/wp-content/uploads/2020/12/NWMAFLogo-450px-Color.png">
-                <figcaption class="footer__text"><strong>The National Women&apos;s Martial Arts Federation (NWMAF)</strong><br>Building personal and collective strength, safety, and well-being <br>through martial arts, self-defense, and healing arts, to empower<br> women and others affected by gender-based discrimination.</figcaption>
+                <figcaption class="footer__text"><p><strong>The National Women&apos;s Martial Arts Federation (NWMAF)</strong></p> 
+                <p>Building personal and collective strength, safety, and well-being through martial arts, self-defense, and healing arts, to empower women and others affected by gender-based discrimination.</p></figcaption>
             </figure>
         </div>
     </div>
