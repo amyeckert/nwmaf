@@ -324,6 +324,7 @@
 
 // footer menus //
 .footer__menu {
+    padding-left: 0;
 
     .menu {
         display: flex;
@@ -332,6 +333,8 @@
         margin: 0;
         margin-bottom: 1.5rem;
         background-color: color(default, dark);
+
+        // @media screen and (min-width: )
 
         .menu-item {
             margin: 0;

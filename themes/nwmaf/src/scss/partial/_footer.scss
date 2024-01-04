@@ -100,7 +100,6 @@
         }
 
         .footer__address {
-            order: 3;
             border-top: 1px solid color(neutral, base);
             padding-top: 1.4rem;
 
@@ -108,8 +107,6 @@
                 padding-top: 0;
                 padding-left: 0;
             }
-
-            @media (min-width: 768px) { order: 3; }
 
             h2 {
                 padding-left: .6rem;
@@ -132,16 +129,22 @@
         }
 
         .footer__social-links {
-            order: 1;
-            margin-bottom: 1rem;
+            padding-bottom: 1.4rem;
+            padding-left: 0;
             border-top: 1px solid color(neutral, base);
+            border-bottom: 1px solid color(neutral, base);
+            margin-bottom: 2rem;
             color: color(neutral, light);
 
-            @media (min-width: 768px) { padding-left: 0; }
+            @media (min-width: 768px) { 
+                padding-left: 0;
+                border-bottom: 0;
+
+            }
 
             h2 {
                 padding-top: 1.5rem;
-                padding-left: .6rem;
+                padding-left: 0;
 
                 @media (min-width: 768px) {
                     padding-top: .6rem;
@@ -151,13 +154,9 @@
 
             .menu-social {
                 display: flex;
-                flex-flow: column nowrap;
+                flex-flow: row nowrap;
                 margin: 0;
                 padding-left: 0;
-
-                @media (min-width: 600px) { -flow: row nowrap; }
-
-                @media (min-width: 768px) {  flex-flow: column nowrap; }
 
                 p { color: color(default, light); }
 
@@ -177,6 +176,7 @@
                 a {
                     display: flex;
                     align-items: center;
+                    background-size: contain;
 
                     &::before {
                         display: inline-flex;
@@ -193,12 +193,12 @@
                 .footer-social-facebook a {
                     background-image: url('../../images/svg/icon-facebook.svg');
                     background-repeat: no-repeat;
-                    background-size: contain;
                 }
 
-                .footer-social-twitter a {
-                    background-image: url('../../images/svg/icon-twitter.svg');
+                .footer-social-x a {
+                    background-image: url('../../images/svg/icon-x-logo.svg');
                     background-repeat: no-repeat;
+                    
                 }
 
                 .footer-social-instagram a {
@@ -214,7 +214,6 @@
         }
 
         .footer__site-info {
-            order: 4;
             margin: 0 auto;
             text-align: center;
 
