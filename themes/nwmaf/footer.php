@@ -16,7 +16,7 @@
     </div>
     <div class="container">
         <div class="row footer__bottom pl-1 pr-1">
-            <div class="col-12 col-md-8 col-lg-10 footer__menu">
+            <div class="col-12 col-md-8 col-lg-9 col-xl-10 footer__menu">
                 <a href="/ally-donation" class="btn cta" target="_blank">Donate</a>
                 <?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
             </div>
@@ -29,7 +29,7 @@
                     <a href="mailto:secretary@nwmaf.org">secretary@nwmaf.org</a>
                 </address> -->
             <!-- </div> -->
-            <div class="col-12 col-md-4 col-lg-2 footer__social-links">
+            <div class="col-12 col-md-4 col-lg-3 col-xl-2 footer__social-links">
                 <h2 class="h3">Follow Us</h2>
                 <ul id="menu-social" class="menu menu-social">
                     <li id="menu-item-4299" class="footer-social-facebook menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.facebook.com/NWMAF" target="_blank" rel="noopener noreferrer"><span class="sr-only">Facebook</span></a></li>

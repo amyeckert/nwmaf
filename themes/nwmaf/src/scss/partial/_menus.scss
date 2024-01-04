@@ -334,7 +334,7 @@
         margin-bottom: 1.5rem;
         background-color: color(default, dark);
 
-        // @media screen and (min-width: )
+        @media screen and (min-width: $bp-992) { flex-flow: row wrap; }
 
         .menu-item {
             margin: 0;
