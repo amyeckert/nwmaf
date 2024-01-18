@@ -4,7 +4,10 @@
 function mepr_add_edit_profile_tab($user) {
     ?>
      <span class="mepr-nav-item">
-        <a href="/member-directory" rel="noopener noreferrer">Directory Profile</a>
+        <a href="/member-directory" rel="noopener noreferrer">Member Directory Profile</a>
+    </span>
+     <span class="mepr-nav-item">
+        <a href="/resources/empowerment/nwmaf-certified-instructors/" rel="noopener noreferrer">Certified Instructor Directory Profile</a>
     </span>
 <?php
 }
