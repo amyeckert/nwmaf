@@ -18,6 +18,8 @@
 /wp-*.php
 /xmlrpc.php
 wp-cli.local.yml
+/.logs
+
 # WordPress #
 ############
 /blogs.dir/
@@ -52,6 +54,7 @@ wp-config-local.php
 /mu-plugins/
 
 # Ignore all themes
+/themes/genesis-block-theme
 /themes/twentytwentytwo
 /themes/twentytwentythree
 /themes/twentytwentyone
